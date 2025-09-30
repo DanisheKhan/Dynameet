@@ -1,4 +1,4 @@
-import { NavBar, Hero, Discography, Events, Contact, About, Footer } from './components'
+import { NavBar, Hero, Discography, SimpleEvents, Events, Contact, About, Footer } from './components'
 import { Routes, Route } from 'react-router-dom'
 import AboutPage from './pages/AboutPage'
 import MusicPage from './pages/MusicPage'
@@ -19,6 +19,7 @@ export default function App() {
               <>
                 <Hero />
                 <Discography />
+                <SimpleEvents />
                 <Footer />
               </>
             )}

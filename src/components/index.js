@@ -7,6 +7,7 @@ export { default as NavBar } from "./sections/NavBar";
 export { default as Hero } from "./sections/Hero";
 export { default as Discography } from "./sections/Discography";
 export { default as Events } from "./sections/Events";
+export { default as SimpleEvents } from "./sections/SimpleEvents";
 export { default as Contact } from "./sections/Contact";
 export { default as About } from "./sections/About";
 export { default as Music } from "./sections/Music";
