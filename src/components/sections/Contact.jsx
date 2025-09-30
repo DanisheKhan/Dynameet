@@ -75,7 +75,7 @@ const Contact = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent p-[2px] rounded-lg">
                   <div className="w-full h-full rounded-lg overflow-hidden">
                     <img
-                      src="/images/contact-side-58840a.png"
+                      src="public\images\footerImg.png"
                       alt="DJ Dynameets Contact"
                       className="w-full h-full object-cover"
                     />

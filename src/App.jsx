@@ -1,4 +1,4 @@
-import { NavBar, Hero, Discography, Events, Contact, About } from './components'
+import { NavBar, Hero, Discography, Events, Contact, About, Footer } from './components'
 import { Routes, Route } from 'react-router-dom'
 import AboutPage from './pages/AboutPage'
 import MusicPage from './pages/MusicPage'
@@ -9,9 +9,9 @@ import './styles/components.css'
 
 export default function App() {
   return (
-    <div className="min-h-screen w-full text-white bg-[#0c0c0c] overflow-x-hidden">
+    <div className="min-h-screen w-full text-white bg-[#0c0c0c] overflow-x-hidden flex flex-col">
       <NavBar />
-      <div className="pt-[90px]"> {/* Added padding to accommodate the floating navbar */}
+      <div className="pt-[90px] flex-grow"> {/* Added padding to accommodate the floating navbar */}
         <Routes>
           <Route
             path="/"
@@ -19,7 +19,7 @@ export default function App() {
               <>
                 <Hero />
                 <Discography />
-                <Contact />
+                <Footer />
               </>
             )}
           />

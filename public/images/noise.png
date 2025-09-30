@@ -1,0 +1,6 @@
+// This is a placeholder for the noise.png file
+// You should create a small noise texture (around 200x200px) with a subtle noise pattern
+// using an image editor and place it in the public/images directory.
+// 
+// If you don't have access to an image editor, you can use a data URL for the noise pattern
+// by modifying the Footer.jsx file to use a CSS background property with a data URL instead.

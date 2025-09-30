@@ -140,7 +140,7 @@ export default function ContactPage() {
       </div>
 
       {/* Keep the existing Contact component at the bottom */}
-      <Contact />
+     
     </div>
   )
 }
