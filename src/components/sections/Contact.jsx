@@ -71,8 +71,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-lg text-white mb-1">Email</h4>
-                    <a 
-                      href={`mailto:${contactInfo.email}`} 
+                    <a
+                      href={`mailto:${contactInfo.email}`}
                       className="text-white/70 hover:text-[#FF33C5] transition-colors"
                     >
                       {contactInfo.email}
@@ -88,8 +88,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-lg text-white mb-1">Phone</h4>
-                    <a 
-                      href={`tel:+91${contactInfo.phone.split(' ')[0]}`} 
+                    <a
+                      href={`tel:+91${contactInfo.phone.split(' ')[0]}`}
                       className="text-white/70 hover:text-[#FF33C5] transition-colors"
                     >
                       {contactInfo.phone}
