@@ -1,5 +1,5 @@
 import Events from '../components/sections/Events'
-import { Contact } from '../components'
+import { Footer } from '../components'
 
 export default function EventsPage() {
   return (
@@ -13,7 +13,7 @@ export default function EventsPage() {
       <div className="mt-12">
         <Events />
       </div>
-
+      <Footer />
     </div>
   )
 }

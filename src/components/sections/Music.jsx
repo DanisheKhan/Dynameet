@@ -31,22 +31,22 @@ const tracks = [
 export default function Music() {
   return (
     <section id="music" className="w-full">
-      <div className="max-w-[1290px] mx-auto px-4">
-        <div className="flex flex-col items-center text-center pt-[183px]">
+      <div className="max-w-[1290px] mx-auto px-6">
+        <div className="flex flex-col items-center text-center pt-[140px] pb-8">
           <h1 className="font-[800] text-[90px] leading-[1.12] text-[#FF6FCF]">MUSIC</h1>
-          <p className="mt-3 max-w-[811px] font-inter text-[20px] leading-[1.4] text-[#999999]">
+          <p className="mt-6 max-w-[811px] font-inter text-[20px] leading-[1.4] text-[#999999]">
             Discover and download exclusive remixes, bootlegs, and club edits. Experience music reimagined with fresh energy and creativity.
           </p>
         </div>
 
-        <div className="mt-[56px]">
+        <div className="mt-[56px] px-4">
           <h2 className="font-lalezar text-[48px]">Featured Music</h2>
         </div>
 
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {tracks.map((t) => (
-            <div key={t.title} className="rounded-[12px] bg-[#1A1D23] border border-[#2B303B] p-6">
-              <div className="flex items-start gap-4">
+            <div key={t.title} className="rounded-[12px] bg-[#1A1D23] border border-[#2B303B] p-8 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex items-start gap-5">
                 <img src={t.cover} alt={t.title} className="w-16 h-16 rounded object-cover" />
                 <div className="flex-1 min-w-0">
                   <div className="font-inter font-semibold text-[18px] text-white truncate">{t.title}</div>

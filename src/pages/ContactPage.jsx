@@ -1,4 +1,4 @@
-import { Contact } from '../components'
+import { Contact, Footer } from '../components'
 import { useEffect } from 'react'
 
 export default function ContactPage() {
@@ -140,7 +140,7 @@ export default function ContactPage() {
       </div>
 
       {/* Keep the existing Contact component at the bottom */}
-     
+      <Footer />
     </div>
   )
 }

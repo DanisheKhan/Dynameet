@@ -49,13 +49,6 @@ const Hero = () => {
           Dynameets elevates every gathering into an exclusive sonic experience.
         </p>
       </div>
-
-      {/* CTA Button */}
-      <div className="absolute right-[44px] top-[746px] z-20">
-        <Button size="small">
-          SIGN UP
-        </Button>
-      </div>
     </section>
   )
 }

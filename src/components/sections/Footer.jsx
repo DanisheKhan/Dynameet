@@ -30,11 +30,11 @@ const Footer = () => {
   };
 
   return (
-    <footer id="footer" className="relative bg-gradient-to-br from-[#FD00B6] via-[#FF33C5] to-[#FF95DC] ">
+    <footer id="footer" className="relative bg-gradient-to-br from-[#FD00B6] via-[#FF33C5] to-[#FF95DC]">
       <div className="container mx-auto relative z-10">
-        <div className="flex flex-col lg:flex-row items-start gap-8 py-12 px-6 lg:px-12">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 py-12 px-6 lg:px-12">
           {/* Left Column - Footer content */}
-          <div className="w-full lg:w-1/2 pt-2">
+          <div className="w-full lg:w-1/2 pt-2 flex flex-col justify-center">
             {/* Logo with glow effect */}
             <h2 className="font-lalezar text-4xl text-white mb-4 drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">
               Dynameet
@@ -126,13 +126,13 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Right Column - Image with improved styling - reduced height and contain instead of cover */}
-          <div className="w-full lg:w-1/2 pt-2 lg:pl-8">
-            <div className="overflow-hidden">
+          {/* Right Column - Image with improved styling and consistent alignment */}
+          <div className="w-full lg:w-1/2 pt-2 lg:pl-8 flex items-center justify-center">
+            <div className="h-[600px] w-full flex items-center justify-center">
               <img
                 src="/images/footerImg.png"
                 alt="DJ Dynameets"
-                className=" object-contain"
+                className="max-h-full max-w-full object-contain scale-110 px-4"
               />
             </div>
           </div>
