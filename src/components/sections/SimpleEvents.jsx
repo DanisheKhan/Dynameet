@@ -13,21 +13,21 @@ const SimpleEvents = () => {
             <img
               src="/images/events-1.jpg"
               alt="DJ Performance"
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              className="w-full h-full object-cover object-[50%_30%] hover:scale-105 transition-transform duration-500"
             />
           </div>
           <div className="relative h-[450px] rounded-md overflow-hidden">
             <img
               src="/images/events-3.jpg"
               alt="DJ Performance"
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              className="w-full h-full object-cover object-[50%_30%] hover:scale-105 transition-transform duration-500"
             />
           </div>
           <div className="relative h-[450px] rounded-md overflow-hidden">
             <img
               src="/images/events-2.jpg"
               alt="DJ Performance"
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              className="w-full h-full object-cover object-[50%_30%] hover:scale-105 transition-transform duration-500"
             />
           </div>
         </div>

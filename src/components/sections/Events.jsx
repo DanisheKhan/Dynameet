@@ -10,7 +10,6 @@ const featuredEvents = [
     location: "Rooftop Terrace, Downtown",
     description: "An electrifying night of house music under the stars with special guest DJs and immersive visuals.",
     capacity: "200 registered",
-    price: "Free",
     featured: true,
     image: "/images/events-1.jpg"
   },
@@ -22,7 +21,6 @@ const featuredEvents = [
     location: "The Basement Club",
     description: "Intimate underground vibes with deep house and techno. Limited capacity for an exclusive experience.",
     capacity: "18+ / No minors",
-    price: "₹2,845",
     featured: true,
     image: "/images/events-2.jpg"
   }
@@ -37,7 +35,6 @@ const regularEvents = [
     location: "Sunset Beach Resort",
     description: "Dance on the sand as the sun sets with tropical house and reggaeton remixes.",
     capacity: "150 / 300",
-    price: "₹1,850",
     image: "/images/events-3.jpg"
   },
   {
@@ -48,7 +45,6 @@ const regularEvents = [
     location: "Sunset Beach Resort",
     description: "Dance on the sand as the sun sets with tropical house and reggaeton remixes.",
     capacity: "150 / 300",
-    price: "₹1,850",
     image: "/images/events-1.jpg"
   },
   {
@@ -59,7 +55,6 @@ const regularEvents = [
     location: "Sunset Beach Resort",
     description: "Dance on the sand as the sun sets with tropical house and reggaeton remixes.",
     capacity: "150 / 300",
-    price: "₹1,850",
     image: "/images/events-2.jpg"
   }
 ]
@@ -68,7 +63,7 @@ const Events = () => {
   return (
     <section id="events" className="w-full bg-[#0c0c0c] py-20">
       <div className="max-w-[1440px] mx-auto px-8">
-        
+
 
         {/* Featured Events */}
         <div className="mb-20">
@@ -88,12 +83,12 @@ const Events = () => {
                   <img
                     src={event.image}
                     alt={event.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover object-[50%_30%] group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
 
-                  {/* Placeholder icon for missing images */}
-                  <div className="absolute inset-0 flex items-center justify-center">
+                  {/* Placeholder icon for missing images (only shows if image fails to load) */}
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0">
                     <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm">
                       <svg className="w-8 h-8 text-white/60" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
@@ -132,15 +127,14 @@ const Events = () => {
                     {event.description}
                   </p>
 
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="flex items-center gap-4 text-sm text-white/70">
+                  <div className="flex items-center mb-4">
+                    <div className="flex items-center text-sm text-white/70">
                       <span className="flex items-center gap-2">
                         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                           <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
                         </svg>
                         {event.capacity}
                       </span>
-                      <span className="text-[#F042B6] font-semibold">{event.price}</span>
                     </div>
                   </div>
 
@@ -162,12 +156,12 @@ const Events = () => {
                 <img
                   src={event.image}
                   alt={event.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-[50%_30%] group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
 
-                {/* Placeholder icon for missing images */}
-                <div className="absolute inset-0 flex items-center justify-center">
+                {/* Placeholder icon for missing images (only shows if image fails to load) */}
+                <div className="absolute inset-0 flex items-center justify-center opacity-0">
                   <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm">
                     <svg className="w-6 h-6 text-white/60" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
@@ -196,15 +190,14 @@ const Events = () => {
                   {event.description}
                 </p>
 
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center gap-3 text-sm text-white/70">
+                <div className="flex items-center mb-4">
+                  <div className="flex items-center text-sm text-white/70">
                     <span className="flex items-center gap-1">
                       <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
                       </svg>
                       {event.capacity}
                     </span>
-                    <span className="text-[#F042B6] font-semibold">{event.price}</span>
                   </div>
                 </div>
 

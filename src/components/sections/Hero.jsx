@@ -21,25 +21,25 @@ const Hero = () => {
         }}
       />
 
-      {/* Hero image */}
-      <img
-        src="/images/hero-main-5b069a.png"
-        alt="DJ Dynameets"
-        className="absolute left-1/2 top-[138px] w-[434px] h-[694px] object-cover transform -translate-x-1/2 z-10"
-      />
-
-      {/* Main title - split into two parts */}
-      <div className="absolute left-[44px] top-[284px] z-20">
+      {/* Main title - split into two parts (behind the image with z-index: 5) */}
+      <div className="absolute left-[44px] top-[284px] z-5">
         <h1 className="font-lalezar text-[208px] leading-[0.9] text-white drop-shadow-2xl">
           DYNA
         </h1>
       </div>
 
-      <div className="absolute right-[44px] top-[284px] z-20">
+      <div className="absolute right-[44px] top-[284px] z-5">
         <h1 className="font-lalezar text-[208px] leading-[0.9] text-white drop-shadow-2xl text-right">
           MEETS
         </h1>
       </div>
+
+      {/* Hero image (above the text with z-index: 20) */}
+      <img
+        src="/images/hero-main-5b069a.png"
+        alt="DJ Dynameets"
+        className="absolute left-1/2 top-[138px] w-[434px] h-[694px] object-cover transform -translate-x-1/2 z-20"
+      />
 
       {/* Description text */}
       <div className="absolute right-[44px] top-[675px] w-[458px] z-20">

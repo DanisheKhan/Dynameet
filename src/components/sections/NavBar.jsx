@@ -11,6 +11,14 @@ const NavBar = () => {
   const location = useLocation()
   const navigate = useNavigate()
 
+  // Utility function to handle navigation and always scroll to top
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+
   // Handle scroll effect for navbar
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +32,7 @@ const NavBar = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [scrolled])
 
-  // Update active item based on current location
+  // Update active item based on current location and scroll to top
   useEffect(() => {
     const path = location.pathname
     const currentItem = navigationItems.find(item => {
@@ -35,6 +43,8 @@ const NavBar = () => {
 
     if (currentItem) {
       setActiveItem(currentItem.label)
+      // Scroll to top when location changes
+      scrollToTop()
     }
   }, [location.pathname])
 
@@ -44,6 +54,8 @@ const NavBar = () => {
 
     if (item.href.startsWith('/')) {
       navigate(item.href)
+      // Scroll to top after navigation
+      window.scrollTo(0, 0)
       return
     }
     if (item.href.startsWith('#')) {
@@ -53,16 +65,25 @@ const NavBar = () => {
         navigate('/')
         // Need to wait for navigation to complete before scrolling
         setTimeout(() => {
-          const element = document.querySelector(hash)
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth' })
+          if (hash === '#home') {
+            window.scrollTo(0, 0)
+          } else {
+            const element = document.querySelector(hash)
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth' })
+            }
           }
         }, 300) // Increased timeout for reliable navigation
         return
       }
-      const element = document.querySelector(item.href)
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' })
+
+      if (item.href === '#home') {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      } else {
+        const element = document.querySelector(item.href)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' })
+        }
       }
     }
   }
@@ -102,7 +123,11 @@ const NavBar = () => {
                 key={item.label}
                 to={item.href}
                 className={`px-3 py-2 rounded-full cursor-pointer hover:text-[#FF33C5] hover:bg-white/5 transition-all duration-200 ${activeItem === item.label ? 'text-[#FF33C5] bg-white/5' : ''}`}
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {
+                  setIsMobileMenuOpen(false)
+                  // Scroll to top when route link is clicked
+                  window.scrollTo(0, 0)
+                }}
               >
                 {item.label}
               </Link>
