@@ -3,7 +3,7 @@ export const navigationItems = [
   { label: "ABOUT", href: "/about" },
   { label: "MUSIC", href: "/music" },
   { label: "EVENTS", href: "/events" },
-  { label: "CONTACT", href: "#contact" },
+  { label: "CONTACT", href: "/contact" },
 ];
 
 export const discographyData = [

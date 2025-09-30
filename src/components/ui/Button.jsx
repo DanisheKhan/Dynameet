@@ -15,9 +15,9 @@ const Button = ({
   }
 
   const sizes = {
-    small: "w-[87px] h-[33px] rounded-[15px] text-[14px]",
-    default: "w-[145px] h-[33px] rounded-[15px] text-[14px]",
-    large: "w-[200px] h-[45px] rounded-[20px] text-[16px]"
+    small: "w-[87px] h-[33px] rounded-full text-[14px]",
+    default: "w-[145px] h-[33px] rounded-full text-[14px]",
+    large: "w-[200px] h-[45px] rounded-full text-[16px]"
   }
 
   return (
@@ -26,7 +26,7 @@ const Button = ({
       onClick={onClick}
       {...props}
     >
-      <span className={`absolute inset-0 rounded-[15px] ${variants[variant]}`}></span>
+      <span className={`absolute inset-0 rounded-full ${variants[variant]}`}></span>
       <span className="relative z-10 flex items-center justify-center h-full">
         {children}
       </span>

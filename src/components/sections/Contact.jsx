@@ -2,7 +2,7 @@ import { contactInfo } from '../../data/content'
 
 const Contact = () => {
   return (
-    <section id="contact" className="mt-[90px] relative">
+    <section id="contact" className="mt-[90px] relative scroll-mt-[120px]">
       <div className="w-full min-h-[765px] bg-gradient-to-br from-[#FD00B6] via-[#FF33C5] to-[#FF95DC] relative overflow-hidden">
         {/* Background pattern overlay */}
         <div className="absolute inset-0 opacity-10">

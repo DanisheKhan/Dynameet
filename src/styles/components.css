@@ -51,6 +51,20 @@
   backdrop-filter: blur(20px);
 }
 
+/* Navigation bar styles */
+nav {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 16px;
+  }
+}
+
 /* Hover effects for interactive elements */
 .interactive-hover {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
