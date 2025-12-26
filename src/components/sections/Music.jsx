@@ -49,8 +49,9 @@ export default function Music() {
           <div className="w-32 h-1 bg-gradient-to-r from-[#FF33C5] to-[#BF5AF2] rounded-full"></div>
         </div>
 
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="rounded-[16px] bg-[#1A1D23] border border-[#2B303B] overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+          {/* Video 1 */}
+          <div className="bg-black rounded-lg overflow-hidden shadow-xl border border-gray-800 hover:border-gray-600 transition-colors duration-300">
             <div className="aspect-video">
               <iframe
                 width="100%"
@@ -66,7 +67,8 @@ export default function Music() {
             </div>
           </div>
 
-          <div className="rounded-[16px] bg-[#1A1D23] border border-[#2B303B] overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
+          {/* Video 2 */}
+          <div className="bg-black rounded-lg overflow-hidden shadow-xl border border-gray-800 hover:border-gray-600 transition-colors duration-300">
             <div className="aspect-video">
               <iframe
                 width="100%"
@@ -82,7 +84,8 @@ export default function Music() {
             </div>
           </div>
 
-          <div className="rounded-[16px] bg-[#1A1D23] border border-[#2B303B] overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
+          {/* Video 3 */}
+          <div className="bg-black rounded-lg overflow-hidden shadow-xl border border-gray-800 hover:border-gray-600 transition-colors duration-300">
             <div className="aspect-video">
               <iframe
                 width="100%"
