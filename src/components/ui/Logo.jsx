@@ -1,14 +1,14 @@
 const Logo = ({ size = 'default', className = '' }) => {
   const sizes = {
     small: 'w-[40px] h-[40px]',
-    default: 'w-[57px] h-[57px]',
+    default: 'w-[200px] h-[60px]',
     large: 'w-[80px] h-[80px]'
   }
 
   return (
     <div className={`flex items-center justify-center ${sizes[size]} ${className}`}>
       <img
-        src="/images/logo.svg"
+        src="/images/logo.png"
         alt="DynaMeets Logo"
         className="w-full h-full object-contain"
       />
