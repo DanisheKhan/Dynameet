@@ -28,7 +28,7 @@ const Events = () => {
                 <source src="/Videos/reel1.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-              
+
               {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
             </div>

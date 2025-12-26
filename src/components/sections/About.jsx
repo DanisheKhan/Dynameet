@@ -19,9 +19,20 @@ export default function About() {
                 DIYA SINGH
               </span>
             </h1>
-            <p className="font-poppins text-[18px] leading-[1.6] text-white/90 max-w-[500px]">
-              DynaMeetss is the stage name of internationally acclaimed artist Diya Singh. A virtuoso of rhythm and atmosphere, she crafts immersive sonic experiences by masterfully blending Afro beats, tribal grooves, Bollywood hooks, and Arabic textures. Renowned for her magnetic stage presence, DynaMeetss is the premier choice for the world's most exclusive VVIP events and private gatherings.
-            </p>
+            <div className="font-poppins text-[18px] leading-[1.6] text-white/90 max-w-[500px]">
+              <p>
+                DJ Dynameets is known for her unique sound and commanding presence behind the decks, solidifying her status as a rising star in the Indian Bollytech music scene.
+                Her sets seamlessly fuse Afro Tech, Melodic House, and Club Fusion, creating high-energy experiences on the dance floor.
+              </p>
+              <p>
+                A sought-after party DJ, Dynameets hails from the renowned musical family of Meet Bros.
+                After taking the Mumbai party circuit by storm, she soon conquered major party hubs across India, and the world.
+              </p>
+              <p>
+                With Bollywood music gaining global popularity, DJ Dynameets is fast emerging as an international sensation. Her versatility and genre-bending sets have captivated audiences across India, further extending the Meet Bros’ legacy into the party and club scene.
+              </p>
+
+            </div>
           </div>
 
           {/* Right Image */}

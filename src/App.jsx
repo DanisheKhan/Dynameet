@@ -18,8 +18,8 @@ export default function App() {
             element={(
               <>
                 <Hero />
-                <Discography />
                 <Events />
+                <Discography />
                 <Footer />
               </>
             )}
