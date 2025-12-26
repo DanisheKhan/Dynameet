@@ -37,7 +37,7 @@ const Hero = () => {
       {/* Hero image (above the text with z-index: 20) */}
       <img
         src="/images/hero-main-5b069a.png"
-        alt="DJ Dynameets"
+        alt="DJ DynaMeetss"
         className="absolute left-1/2 top-[138px] w-[434px] h-[694px] object-cover transform -translate-x-1/2 z-20"
       />
 
@@ -46,7 +46,7 @@ const Hero = () => {
         <p className="font-poppins text-[14px] leading-[1.6] text-right text-white/90">
           Where rhythm meets refinement, and culture becomes couture.
           <br />
-          Dynameets elevates every gathering into an exclusive sonic experience.
+          DynaMeetss elevates every gathering into an exclusive sonic experience.
         </p>
       </div>
     </section>

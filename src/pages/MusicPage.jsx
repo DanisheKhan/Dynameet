@@ -1,6 +1,6 @@
 import { Footer } from '../components'
 import Music from '../components/sections/Music'
-import { Button } from '../components/ui/Button'
+import Button from '../components/ui/Button'
 
 // Featured Album Component
 const FeaturedAlbum = () => {
@@ -83,7 +83,7 @@ const MusicPlatforms = () => {
         <div className="text-center mb-12">
           <h2 className="font-lalezar text-[48px] text-white">Listen On</h2>
           <p className="mt-4 text-[18px] text-[#999999] max-w-[700px] mx-auto">
-            Follow DJ Dynameets on your favorite music platforms to stay updated with the latest releases
+            Follow DJ DynaMeetss on your favorite music platforms to stay updated with the latest releases
           </p>
         </div>
 

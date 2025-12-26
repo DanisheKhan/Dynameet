@@ -16,7 +16,7 @@ export default function ContactPage() {
             <h1 className="font-lalezar text-5xl mb-4">Contact Us</h1>
             <div className="h-[2px] w-24 bg-[#FF33C5] mx-auto mb-6"></div>
             <p className="text-white/80 text-lg max-w-2xl mx-auto">
-              Ready to book DJ Dynameet for your event? Have questions about availability or services?
+              Ready to book DJ DynaMeets for your event? Have questions about availability or services?
               Fill out the form below and we'll get back to you promptly.
             </p>
           </div>

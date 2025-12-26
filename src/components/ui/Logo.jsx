@@ -9,7 +9,7 @@ const Logo = ({ size = 'default', className = '' }) => {
     <div className={`flex items-center justify-center ${sizes[size]} ${className}`}>
       <img
         src="/images/logo.svg"
-        alt="Dynameet Logo"
+        alt="DynaMeets Logo"
         className="w-full h-full object-contain"
       />
     </div>

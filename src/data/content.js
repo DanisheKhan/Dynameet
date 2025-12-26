@@ -2,7 +2,7 @@ export const navigationItems = [
   { label: "HOME", href: "/" },
   { label: "ABOUT", href: "/about" },
   { label: "MUSIC", href: "/music" },
-  { label: "EVENTS", href: "/events" },
+  // { label: "EVENTS", href: "/events" },
   { label: "CONTACT", href: "/contact" },
 ];
 
@@ -14,7 +14,7 @@ export const discographyData = [
   },
   {
     img: "disc-2-108ec0.jpg",
-    title: "DUBAI DYNAMEETS",
+    title: "DUBAI DynaMeetsS",
     subtitle: "PERFORMING LIVE",
   },
   {
@@ -23,7 +23,7 @@ export const discographyData = [
   },
   {
     img: "disc-5-5d312e.jpg",
-    title: "DJ DYNAMEETS",
+    title: "DJ DynaMeetsS",
     subtitle: "LIVE PERFORMANCE",
   },
 ];
@@ -36,10 +36,10 @@ export const eventImages = [
 
 export const contactInfo = {
   email: "enquiry@dynameets.in",
-  phone: "8928295092 / 8850610219",
+  phone: "8850610219 / 8169072631",
   socialLinks: [
     { icon: "📧", label: "Email", href: "mailto:enquiry@dynameets.in" },
-    { icon: "📱", label: "Phone", href: "tel:+918928295092" },
+    { icon: "📱", label: "Phone", href: "tel:+918850610219" },
     { icon: "🎵", label: "Music", href: "#" },
     { icon: "🎧", label: "Spotify", href: "#" },
   ],

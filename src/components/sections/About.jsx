@@ -20,7 +20,7 @@ export default function About() {
               </span>
             </h1>
             <p className="font-poppins text-[18px] leading-[1.6] text-white/90 max-w-[500px]">
-              Dynameets is the stage name of internationally acclaimed artist Diya Singh. A virtuoso of rhythm and atmosphere, she crafts immersive sonic experiences by masterfully blending Afro beats, tribal grooves, Bollywood hooks, and Arabic textures. Renowned for her magnetic stage presence, Dynameets is the premier choice for the world's most exclusive VVIP events and private gatherings.
+              DynaMeetss is the stage name of internationally acclaimed artist Diya Singh. A virtuoso of rhythm and atmosphere, she crafts immersive sonic experiences by masterfully blending Afro beats, tribal grooves, Bollywood hooks, and Arabic textures. Renowned for her magnetic stage presence, DynaMeetss is the premier choice for the world's most exclusive VVIP events and private gatherings.
             </p>
           </div>
 
@@ -32,7 +32,7 @@ export default function About() {
             {/* Main image */}
             <img
               src="/images/about-hero-55a245.png"
-              alt="Diya Singh - Dynameets"
+              alt="Diya Singh - DynaMeetss"
               className="relative z-10 w-full max-w-[500px] h-auto object-cover"
             />
           </div>

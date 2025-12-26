@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { eventImages } from '../../data/content';
+// import { eventImages } from '../../data/content';
 
 const SimpleEvents = () => {
   return (

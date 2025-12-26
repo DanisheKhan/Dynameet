@@ -37,7 +37,7 @@ const Footer = () => {
           <div className="w-full lg:w-1/2 pt-2 flex flex-col justify-center">
             {/* Logo with glow effect */}
             <h2 className="font-lalezar text-4xl text-white mb-4 drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">
-              Dynameet
+              DynaMeets
             </h2>
 
             {/* Description with improved typography - reduced margins */}
@@ -122,7 +122,7 @@ const Footer = () => {
 
             {/* Copyright with improved styling */}
             <p className="font-inter text-xs text-white/70 border-t border-white/10 pt-4">
-              © {currentYear} Dynameet. All Rights Reserved.
+              © {currentYear} DynaMeets. All Rights Reserved.
             </p>
           </div>
 
@@ -131,7 +131,7 @@ const Footer = () => {
             <div className="h-[600px] w-full flex items-center justify-center">
               <img
                 src="/images/footerImg.png"
-                alt="DJ Dynameets"
+                alt="DJ DynaMeetss"
                 className="max-h-full max-w-full object-contain scale-110 px-4"
               />
             </div>

@@ -2,7 +2,7 @@ const tracks = [
   {
     cover: "/images/disc-1-60f8da.jpg",
     title: "Midnight Dreams (Extended Mix)",
-    artist: "DJ Dynameets",
+    artist: "DJ DynaMeetss",
     duration: "6:18",
     plays: "987",
     likes: "892",
@@ -11,7 +11,7 @@ const tracks = [
   {
     cover: "/images/disc-2-108ec0.jpg",
     title: "Golden Hour (Club Edit)",
-    artist: "DJ Dynameets",
+    artist: "DJ DynaMeetss",
     duration: "4:08",
     plays: "756",
     likes: "543",
@@ -20,7 +20,7 @@ const tracks = [
   {
     cover: "/images/disc-5-5d312e.jpg",
     title: "Cosmic Journey (Radio Edit)",
-    artist: "DJ Dynameets",
+    artist: "DJ DynaMeetss",
     duration: "3:56",
     plays: "543",
     likes: "432",
@@ -29,7 +29,7 @@ const tracks = [
   {
     cover: "/images/disc-4-520e12.jpg",
     title: "Electric Vibes (Original Mix)",
-    artist: "DJ Dynameets",
+    artist: "DJ DynaMeetss",
     duration: "5:24",
     plays: "1245",
     likes: "978",
@@ -38,7 +38,7 @@ const tracks = [
   {
     cover: "/images/disc-6-2ed311.jpg",
     title: "Sunset Groove (Extended Mix)",
-    artist: "DJ Dynameets",
+    artist: "DJ DynaMeetss",
     duration: "7:12",
     plays: "834",
     likes: "721",
@@ -47,7 +47,7 @@ const tracks = [
   {
     cover: "/images/disc-7-70dc39.jpg",
     title: "Urban Dreams (Club Mix)",
-    artist: "DJ Dynameets",
+    artist: "DJ DynaMeetss",
     duration: "5:48",
     plays: "1087",
     likes: "904",
@@ -79,7 +79,7 @@ export default function Music() {
         <div className="flex flex-col md:flex-row items-center justify-between pt-[140px] pb-8">
           <div className="max-w-[600px] md:pr-8">
             <h1 className="font-lalezar text-[90px] leading-[1.12] text-[#FF6FCF] drop-shadow-lg">
-              <span className="block">DJ DYNAMEETS</span>
+              <span className="block">DJ DynaMeetsS</span>
               <span className="block text-white">MUSIC</span>
             </h1>
             <p className="mt-6 font-inter text-[20px] leading-[1.4] text-[#d1d1d1]">
@@ -91,7 +91,7 @@ export default function Music() {
             <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px]">
               <img
                 src="/images/disc-8-607711.jpg"
-                alt="DJ Dynameets Vinyl"
+                alt="DJ DynaMeetss Vinyl"
                 className="w-full h-full object-cover rounded-full shadow-2xl animate-[spin_20s_linear_infinite] border-8 border-white/20"
               />
               <div className="absolute inset-0 flex items-center justify-center">
