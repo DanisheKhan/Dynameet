@@ -5,6 +5,7 @@ export { default as Logo } from "./ui/Logo";
 // Section Components
 export { default as NavBar } from "./sections/NavBar";
 export { default as Hero } from "./sections/Hero";
+export { default as Events } from "./sections/Events";
 export { default as Discography } from "./sections/Discography";
 export { default as Contact } from "./sections/Contact";
 export { default as About } from "./sections/About";
