@@ -1,4 +1,4 @@
-import { Contact, Footer } from '../components'
+import { Footer, PageLayout, PageHeader, ContentSection } from '../components'
 import { useEffect } from 'react'
 
 export default function ContactPage() {
@@ -8,18 +8,12 @@ export default function ContactPage() {
   }, [])
 
   return (
-    <div className="min-h-screen w-full text-white bg-[#0c0c0c] overflow-x-hidden">
-      <div className="container mx-auto px-4 py-12">
-        <div className="max-w-4xl mx-auto">
-          {/* Classic Header */}
-          <div className="text-center mb-12">
-            <h1 className="font-lalezar text-5xl mb-4">Contact Us</h1>
-            <div className="h-[2px] w-24 bg-[#FF33C5] mx-auto mb-6"></div>
-            <p className="text-white/80 text-lg max-w-2xl mx-auto">
-              Ready to book DJ DynaMeets for your event? Have questions about availability or services?
-              Fill out the form below and we'll get back to you promptly.
-            </p>
-          </div>
+    <PageLayout>
+      <ContentSection maxWidth="max-w-4xl" className="pt-8">
+        <PageHeader 
+          title="Contact Us"
+          description="Ready to book DJ DynaMeets for your event? Have questions about availability or services? Fill out the form below and we'll get back to you promptly."
+        />
 
           {/* Two Column Layout */}
           <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
@@ -69,7 +63,7 @@ export default function ContactPage() {
                 <div>
                   <button
                     type="submit"
-                    className="bg-[#FF33C5] text-white font-medium py-3 px-10 hover:bg-[#FD00B6] transition-colors focus:outline-none"
+                    className="bg-gradient-to-r from-[#FF33C5] to-[#BF5AF2] text-white font-medium py-3 px-10 hover:shadow-lg hover:shadow-[#FF33C5]/50 transition-all duration-300 focus:outline-none rounded-md"
                   >
                     SUBMIT
                   </button>
@@ -136,11 +130,8 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Keep the existing Contact component at the bottom */}
+      </ContentSection>
       <Footer />
-    </div>
+    </PageLayout>
   )
 }

@@ -1,6 +1,9 @@
 // UI Components
 export { default as Button } from "./ui/Button";
 export { default as Logo } from "./ui/Logo";
+export { default as PageLayout } from "./ui/PageLayout";
+export { default as PageHeader } from "./ui/PageHeader";
+export { default as ContentSection } from "./ui/ContentSection";
 
 // Section Components
 export { default as NavBar } from "./sections/NavBar";

@@ -1,11 +1,11 @@
-import { Footer } from '../components'
+import { Footer, PageLayout } from '../components'
 import Music from '../components/sections/Music'
 import Button from '../components/ui/Button'
 
 // Featured Album Component
 const FeaturedAlbum = () => {
   return (
-    <section className="py-20 relative">
+    <section className="py-16 relative">
       {/* Background Effect */}
       <div
         className="absolute left-[30%] top-[40%] w-[50%] h-[60%] rounded-full opacity-60"
@@ -15,7 +15,7 @@ const FeaturedAlbum = () => {
         }}
       />
 
-      <div className="max-w-[1290px] mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="w-full md:w-1/2">
             <div className="relative">
@@ -31,8 +31,8 @@ const FeaturedAlbum = () => {
           </div>
 
           <div className="w-full md:w-1/2">
-            <h2 className="font-lalezar text-[42px] text-white">Latest Album</h2>
-            <h3 className="font-lalezar text-[64px] text-[#FF33C5] -mt-2">MIDNIGHT VIBE</h3>
+            <h2 className="font-lalezar text-3xl md:text-4xl text-white">Latest Album</h2>
+            <h3 className="font-lalezar text-5xl md:text-6xl text-[#FF33C5] -mt-2">MIDNIGHT VIBE</h3>
             <p className="mt-6 text-[18px] text-[#d1d1d1] leading-relaxed">
               Experience the latest collection of tracks that blend deep house rhythms with melodic progressions.
               This album takes you on a journey through the night, from sunset grooves to dawn melodies.
@@ -79,10 +79,10 @@ const MusicPlatforms = () => {
 
   return (
     <section className="py-16 bg-[#13151a]">
-      <div className="max-w-[1290px] mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="font-lalezar text-[48px] text-white">Listen On</h2>
-          <p className="mt-4 text-[18px] text-[#999999] max-w-[700px] mx-auto">
+          <h2 className="font-lalezar text-4xl md:text-5xl text-white">Listen On</h2>
+          <p className="mt-4 text-lg text-[#999999] max-w-2xl mx-auto">
             Follow DJ DynaMeetss on your favorite music platforms to stay updated with the latest releases
           </p>
         </div>
@@ -107,13 +107,11 @@ const MusicPlatforms = () => {
 
 export default function MusicPage() {
   return (
-    <div className="min-h-screen w-full text-white bg-[#0c0c0c] overflow-x-hidden">
-      <div>
-        <Music />
-        <FeaturedAlbum />
-        <MusicPlatforms />
-      </div>
+    <PageLayout>
+      <Music />
+      <FeaturedAlbum />
+      <MusicPlatforms />
       <Footer />
-    </div>
+    </PageLayout>
   )
 }

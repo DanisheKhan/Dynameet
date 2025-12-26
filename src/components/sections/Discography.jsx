@@ -2,13 +2,14 @@ import { discographyData } from '../../data/content'
 
 const Discography = () => {
   return (
-    <section id="music" className="mt-[190px] px-4">
-      <h2 className="ml-[72px] font-lalezar text-[80px] text-white mb-8">
-        Discography
-      </h2>
+    <section id="music" className="py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="font-lalezar text-5xl md:text-6xl lg:text-7xl text-white mb-8">
+          Discography
+        </h2>
 
-      <div className="overflow-x-auto">
-        <div className="flex gap-[28px] w-max px-[72px]">
+        <div className="overflow-x-auto -mx-4 sm:-mx-6 lg:-mx-8">
+          <div className="flex gap-6 lg:gap-8 w-max px-4 sm:px-6 lg:px-8">
           {discographyData.map((disc, index) => (
             <div
               key={index}
@@ -42,6 +43,7 @@ const Discography = () => {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </section>
   )

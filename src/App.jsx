@@ -6,6 +6,7 @@ import EventsPage from './pages/EventsPage'
 import ContactPage from './pages/ContactPage'
 import './styles/globals.css'
 import './styles/components.css'
+import './styles/layout.css'
 
 export default function App() {
   return (

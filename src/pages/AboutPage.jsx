@@ -1,11 +1,17 @@
-import { About, Footer } from '../components'
+import { About, Footer, PageLayout, PageHeader, ContentSection } from '../components'
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen w-full text-white bg-[#0c0c0c] overflow-x-hidden">
+    <PageLayout>
+      <ContentSection className="pt-8">
+        <PageHeader 
+          title="About DJ DynaMeets"
+          description="Discover the journey, passion, and artistry behind the music. From underground beginnings to electrifying performances worldwide."
+        />
+      </ContentSection>
       <About />
       <Footer />
-    </div>
+    </PageLayout>
   )
 }
 

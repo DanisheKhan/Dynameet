@@ -1,10 +1,10 @@
 const Events = () => {
   return (
-    <section id="events" className="relative w-full min-h-screen bg-gradient-to-b from-[#0c0c0c] via-[#1a1a1a] to-[#0c0c0c] py-20">
-      <div className="container mx-auto px-4 md:px-8">
+    <section id="events" className="relative w-full min-h-screen bg-gradient-to-b from-[#0c0c0c] via-[#1a1a1a] to-[#0c0c0c] py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
             Events & Highlights
           </h2>
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">

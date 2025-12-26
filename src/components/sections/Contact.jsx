@@ -3,12 +3,12 @@ import { contactInfo } from '../../data/content';
 
 const Contact = () => {
   return (
-    <section id="contact" className="relative w-full bg-[#0c0c0c] py-20">
-      <div className="max-w-[1440px] mx-auto px-8">
+    <section id="contact" className="relative w-full bg-[#0c0c0c] py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-start gap-12">
           {/* Left Column - Contact Form */}
           <div className="w-full md:w-1/2">
-            <h2 className="font-lalezar text-[36px] text-white mb-8">Get In Touch</h2>
+            <h2 className="font-lalezar text-3xl md:text-4xl text-white mb-8">Get In Touch</h2>
             <form className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>

@@ -1,6 +1,6 @@
 export default function Music() {
   return (
-    <section id="music" className="w-full relative py-20">
+    <section id="music" className="w-full relative py-16">
       {/* Background blur elements */}
       <div
         className="absolute left-[10%] top-[20%] w-[60%] h-[50%] rounded-full opacity-70"
@@ -17,15 +17,15 @@ export default function Music() {
         }}
       />
 
-      <div className="max-w-[1290px] mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Hero Section */}
-        <div className="flex flex-col md:flex-row items-center justify-between pt-[140px] pb-8">
+        <div className="flex flex-col md:flex-row items-center justify-between pt-20 pb-8">
           <div className="max-w-[600px] md:pr-8">
-            <h1 className="font-lalezar text-[90px] leading-[1.12] text-[#FF6FCF] drop-shadow-lg">
+            <h1 className="font-lalezar text-5xl md:text-7xl lg:text-[90px] leading-tight text-[#FF6FCF] drop-shadow-lg">
               <span className="block">DJ DynaMeetsS</span>
               <span className="block text-white">MUSIC</span>
             </h1>
-            <p className="mt-6 font-inter text-[20px] leading-[1.4] text-[#d1d1d1]">
+            <p className="mt-6 font-inter text-lg md:text-xl leading-relaxed text-[#d1d1d1]">
               Experience exclusive remixes, bootlegs, and club edits. Immerse yourself in music reimagined with fresh energy and creativity.
             </p>
           </div>
@@ -44,12 +44,12 @@ export default function Music() {
           </div>
         </div>
 
-        <div className="mt-[80px] px-4">
-          <h2 className="font-lalezar text-[48px] text-white">Featured Videos</h2>
+        <div className="mt-20">
+          <h2 className="font-lalezar text-4xl md:text-5xl text-white mb-2">Featured Videos</h2>
           <div className="w-32 h-1 bg-gradient-to-r from-[#FF33C5] to-[#BF5AF2] rounded-full"></div>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Video 1 */}
           <div className="bg-black rounded-lg overflow-hidden shadow-xl border border-gray-800 hover:border-gray-600 transition-colors duration-300">
             <div className="aspect-video">

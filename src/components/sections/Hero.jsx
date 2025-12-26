@@ -2,7 +2,7 @@ import { Button } from '../'
 
 const Hero = () => {
   return (
-    <section id="home" className="relative w-full h-[832px] overflow-hidden">
+    <section id="home" className="relative w-full min-h-screen overflow-hidden py-20 md:py-0 md:h-[832px]">
       {/* Background gradient blur effect */}
       <div
         className="absolute left-[20%] top-[40%] w-[60%] h-[50%] rounded-full opacity-80"

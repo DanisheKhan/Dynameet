@@ -8,12 +8,12 @@ const items = [
 export default function About() {
   return (
     <section id="about" className="w-full relative bg-[#0c0c0c] min-h-screen">
-      <div className="relative max-w-[1440px] mx-auto px-8">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section with Split Layout */}
-        <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 pt-32 pb-20">
+        <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 py-16 lg:py-20">
           {/* Left Content */}
           <div className="order-1 lg:order-1 flex flex-col justify-center">
-            <h1 className="font-lalezar text-[80px] lg:text-[100px] leading-[0.8] mb-8">
+            <h1 className="font-lalezar text-6xl md:text-7xl lg:text-8xl xl:text-[100px] leading-tight mb-8">
               <span className="text-white block">MEET</span>
               <span className="bg-gradient-to-r from-[#F042B6] to-[#F042B6] bg-clip-text text-transparent block">
                 DIYA SINGH
