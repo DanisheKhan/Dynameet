@@ -1,4 +1,3 @@
-import Events from '../components/sections/Events'
 import { Footer } from '../components'
 
 export default function EventsPage() {
@@ -9,9 +8,6 @@ export default function EventsPage() {
         <p className="mt-3 mx-auto max-w-[636px] font-inter text-[20px] leading-[1.4] text-[#999] px-4">
           Join me for unforgettable nights of music, energy, and connection. From intimate underground sessions to massive festival stages.
         </p>
-      </div>
-      <div className="mt-12">
-        <Events />
       </div>
       <Footer />
     </div>
