@@ -1,6 +1,6 @@
 import { Suspense, lazy } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { NavBar, Hero, Discography, Footer, Events } from './components'
+import { NavBar, Hero, Discography, Footer, Events, ScrollToTop } from './components'
 import './styles/globals.css'
 import './styles/components.css'
 import './styles/layout.css'
@@ -41,6 +41,7 @@ export default function App() {
           </Routes>
         </Suspense>
       </div>
+      <ScrollToTop />
     </div>
   )
 }
