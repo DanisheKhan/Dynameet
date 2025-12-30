@@ -125,7 +125,7 @@ const NavBar = () => {
               <Link
                 key={item.label}
                 to={item.href}
-                className={`px-3 py-2 rounded-full cursor-pointer transition-all duration-300 hover:text-[#FF33C5] hover:bg-white/5 hover:scale-105 active:scale-95 ${activeItem === item.label ? 'text-[#FF33C5] bg-white/5 shadow-[0_0_10px_rgba(255,51,197,0.2)]' : ''}`}
+                className={`px-3 py-2 rounded-full cursor-pointer transition-all duration-300 hover:text-[#FF33C5] hover:bg-white/5 hover:scale-105 active:scale-95 ${activeItem === item.label ? 'text-[#FF33C5] bg-white/5' : ''}`}
                 onClick={() => {
                    window.scrollTo(0, 0)
                 }}
@@ -135,7 +135,7 @@ const NavBar = () => {
             ) : (
               <a
                 key={item.label}
-                className={`px-3 py-2 rounded-full cursor-pointer transition-all duration-300 hover:text-[#FF33C5] hover:bg-white/5 hover:scale-105 active:scale-95 ${activeItem === item.label ? 'text-[#FF33C5] bg-white/5 shadow-[0_0_10px_rgba(255,51,197,0.2)]' : ''}`}
+                className={`px-3 py-2 rounded-full cursor-pointer transition-all duration-300 hover:text-[#FF33C5] hover:bg-white/5 hover:scale-105 active:scale-95 ${activeItem === item.label ? 'text-[#FF33C5] bg-white/5' : ''}`}
                 onClick={() => handleNavClick(item)}
               >
                 {item.label}
@@ -159,7 +159,7 @@ const NavBar = () => {
                   <Link
                     key={item.label}
                     to={item.href}
-                    className={`px-4 py-2 w-full text-center rounded-xl cursor-pointer transition-all duration-300 hover:text-[#FF33C5] hover:bg-white/5 ${activeItem === item.label ? 'text-[#FF33C5] bg-white/5 shadow-inner' : ''}`}
+                    className={`px-4 py-2 w-full text-center rounded-xl cursor-pointer transition-all duration-300 hover:text-[#FF33C5] hover:bg-white/5 ${activeItem === item.label ? 'text-[#FF33C5] bg-white/5' : ''}`}
                     onClick={() => {
                       setIsMobileMenuOpen(false)
                       window.scrollTo(0, 0)
@@ -170,7 +170,7 @@ const NavBar = () => {
                 ) : (
                   <a
                     key={item.label}
-                    className={`px-4 py-2 w-full text-center rounded-xl cursor-pointer transition-all duration-300 hover:text-[#FF33C5] hover:bg-white/5 ${activeItem === item.label ? 'text-[#FF33C5] bg-white/5 shadow-inner' : ''}`}
+                    className={`px-4 py-2 w-full text-center rounded-xl cursor-pointer transition-all duration-300 hover:text-[#FF33C5] hover:bg-white/5 ${activeItem === item.label ? 'text-[#FF33C5] bg-white/5' : ''}`}
                     onClick={() => handleNavClick(item)}
                   >
                     {item.label}
