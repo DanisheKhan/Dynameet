@@ -94,7 +94,9 @@ const NavBar = () => {
         {/* Logo */}
         <div className="flex items-center justify-between w-full md:w-auto">
           <div className="flex items-center gap-[10px] p-[10px]">
-            <Logo />
+            <Link to="/" onClick={() => window.scrollTo(0, 0)}>
+              <Logo />
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
