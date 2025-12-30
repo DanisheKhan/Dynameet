@@ -36,61 +36,61 @@ const Footer = () => {
   }
 
   return (
-    <footer id="footer" className="relative bg-black pt-20 pb-10 overflow-hidden">
+    <footer id="footer" className="relative bg-black pt-12 sm:pt-16 lg:pt-20 pb-6 sm:pb-8 lg:pb-10 overflow-hidden">
       {/* Ambient Background */}
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#FF33C5]/50 to-transparent"></div>
-      <div className="absolute -top-[200px] left-1/4 w-[500px] h-[500px] bg-[#FF33C5]/10 rounded-full blur-[100px] pointer-events-none"></div>
+      <div className="absolute -top-[100px] sm:-top-[150px] lg:-top-[200px] left-1/4 w-[300px] sm:w-[400px] lg:w-[500px] h-[300px] sm:h-[400px] lg:h-[500px] bg-[#FF33C5]/10 rounded-full blur-[80px] sm:blur-[100px] pointer-events-none"></div>
 
-      <div className="container mx-auto px-6 lg:px-12 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-          
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center mb-10 sm:mb-12 lg:mb-16">
+
           {/* Left Column - Content */}
-          <motion.div 
+          <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
             className="flex flex-col items-center lg:items-start text-center lg:text-left"
           >
-            <h2 className="font-lalezar text-6xl md:text-8xl text-transparent bg-clip-text bg-gradient-to-br from-white to-white/50 mb-6 drop-shadow-sm">
+            <h2 className="font-lalezar text-4xl sm:text-5xl md:text-6xl lg:text-8xl text-transparent bg-clip-text bg-gradient-to-br from-white to-white/50 mb-4 sm:mb-6 drop-shadow-sm">
               DynaMeets
             </h2>
 
-            <p className="font-poppins text-lg text-white/60 max-w-md mb-8 leading-relaxed">
+            <p className="font-poppins text-sm sm:text-base lg:text-lg text-white/60 max-w-md mb-6 sm:mb-8 leading-relaxed px-4 sm:px-0">
               Premier DJ and entertainment services transforming events into unforgettable sonic experiences.
             </p>
 
             {/* Contact Info Grid */}
-            <div className="flex flex-col sm:flex-row gap-6 mb-10 w-full sm:w-auto">
-                <a href={`mailto:${contactInfo.email}`} className="group flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-[#FF33C5]/50 hover:bg-[#FF33C5]/10 transition-all duration-300">
-                    <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform text-[#FF33C5]">
-                        {socialIcons.Email}
-                    </div>
-                    <div className="text-left">
-                        <div className="text-xs text-white/50 uppercase tracking-widest font-bold">Email</div>
-                        <div className="text-sm text-white font-medium">{contactInfo.email}</div>
-                    </div>
-                </a>
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-8 sm:mb-10 w-full sm:w-auto">
+              <a href={`mailto:${contactInfo.email}`} className="group flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-white/5 border border-white/10 hover:border-[#FF33C5]/50 hover:bg-[#FF33C5]/10 transition-all duration-300">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform text-[#FF33C5]">
+                  {socialIcons.Email}
+                </div>
+                <div className="text-left">
+                  <div className="text-[10px] sm:text-xs text-white/50 uppercase tracking-widest font-bold">Email</div>
+                  <div className="text-xs sm:text-sm text-white font-medium truncate max-w-[180px] sm:max-w-none">{contactInfo.email}</div>
+                </div>
+              </a>
 
-                <a href={`tel:+91${contactInfo.phone.split(' ')[0]}`} className="group flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-[#FF33C5]/50 hover:bg-[#FF33C5]/10 transition-all duration-300">
-                    <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform text-[#FF33C5]">
-                        {socialIcons.Phone}
-                    </div>
-                    <div className="text-left">
-                         <div className="text-xs text-white/50 uppercase tracking-widest font-bold">Phone</div>
-                        <div className="text-sm text-white font-medium">{contactInfo.phone}</div>
-                    </div>
-                </a>
+              <a href={`tel:+91${contactInfo.phone.split(' ')[0]}`} className="group flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-white/5 border border-white/10 hover:border-[#FF33C5]/50 hover:bg-[#FF33C5]/10 transition-all duration-300">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform text-[#FF33C5]">
+                  {socialIcons.Phone}
+                </div>
+                <div className="text-left">
+                  <div className="text-[10px] sm:text-xs text-white/50 uppercase tracking-widest font-bold">Phone</div>
+                  <div className="text-xs sm:text-sm text-white font-medium">{contactInfo.phone}</div>
+                </div>
+              </a>
             </div>
 
             {/* Social Icons */}
-            <div className="flex items-center gap-4">
-               {contactInfo.socialLinks.map((social, index) => (
+            <div className="flex items-center gap-3 sm:gap-4">
+              {contactInfo.socialLinks.map((social, index) => (
                 <motion.a
                   key={index}
                   whileHover={{ y: -5, scale: 1.1 }}
                   href={social.href}
-                  className="w-12 h-12 rounded-full border border-white/10 bg-white/5 hover:bg-[#FF33C5] hover:border-[#FF33C5] flex items-center justify-center text-white/70 hover:text-white transition-all duration-300 shadow-lg"
+                  className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-white/10 bg-white/5 hover:bg-[#FF33C5] hover:border-[#FF33C5] flex items-center justify-center text-white/70 hover:text-white transition-all duration-300 shadow-lg"
                   aria-label={social.label}
                 >
                   {socialIcons[social.label]}
@@ -101,47 +101,47 @@ const Footer = () => {
           </motion.div>
 
           {/* Right Column - Image */}
-          <motion.div 
-             initial={{ opacity: 0, scale: 0.9 }}
-             whileInView={{ opacity: 1, scale: 1 }}
-             viewport={{ once: true }}
-             transition={{ duration: 0.8 }}
-             className="relative flex justify-center lg:justify-end"
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="relative flex justify-center lg:justify-end"
           >
-             <div className="relative z-10 w-full max-w-md lg:max-w-lg aspect-square">
-                 {/* Glow behind image */}
-                 <div className="absolute inset-0 bg-gradient-radial from-[#FF33C5]/20 to-transparent blur-3xl rounded-full"></div>
-                 <img
-                    src="/images/footerImg.png"
-                    alt="DJ DynaMeetss"
-                    className="w-full h-full object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700 ease-out"
-                 />
-             </div>
+            <div className="relative z-10 w-full max-w-[280px] sm:max-w-sm md:max-w-md lg:max-w-lg aspect-square">
+              {/* Glow behind image */}
+              <div className="absolute inset-0 bg-gradient-radial from-[#FF33C5]/20 to-transparent blur-3xl rounded-full"></div>
+              <img
+                src="/images/footerImg.png"
+                alt="DJ DynaMeetss"
+                className="w-full h-full object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700 ease-out"
+              />
+            </div>
           </motion.div>
         </div>
 
         {/* Footer Bottom */}
-        <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-             {/* Nav Links */}
-            <nav>
-              <ul className="flex flex-wrap justify-center gap-6">
-                {navigationItems.map((item, index) => (
-                  <li key={index}>
-                    <Link
-                      to={item.href}
-                      onClick={() => window.scrollTo(0, 0)}
-                      className="font-poppins text-sm text-white/60 hover:text-[#FF33C5] transition-colors"
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
+        <div className="border-t border-white/5 pt-6 sm:pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          {/* Nav Links */}
+          <nav>
+            <ul className="flex flex-wrap justify-center gap-4 sm:gap-6">
+              {navigationItems.map((item, index) => (
+                <li key={index}>
+                  <Link
+                    to={item.href}
+                    onClick={() => window.scrollTo(0, 0)}
+                    className="font-poppins text-xs sm:text-sm text-white/60 hover:text-[#FF33C5] transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
 
-            <p className="font-poppins text-xs text-white/40">
-              © {currentYear} DynaMeets. All Rights Reserved.
-            </p>
+          <p className="font-poppins text-[10px] sm:text-xs text-white/40">
+            © {currentYear} DynaMeets. All Rights Reserved.
+          </p>
         </div>
       </div>
     </footer>
