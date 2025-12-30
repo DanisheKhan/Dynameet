@@ -127,7 +127,7 @@ const NavBar = () => {
                 to={item.href}
                 className={`px-3 py-2 rounded-full cursor-pointer transition-all duration-300 hover:text-[#FF33C5] hover:bg-white/5 hover:scale-105 active:scale-95 ${activeItem === item.label ? 'text-[#FF33C5] bg-white/5' : ''}`}
                 onClick={() => {
-                   window.scrollTo(0, 0)
+                  window.scrollTo(0, 0)
                 }}
               >
                 {item.label}
