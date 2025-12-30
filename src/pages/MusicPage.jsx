@@ -186,16 +186,14 @@ export default function MusicPage() {
           </div>
 
           {/* 4. Listen Everywhere */}
+          {/* 4. Listen Everywhere */}
           <motion.div 
             variants={itemVariants} 
-            className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-b from-white/5 to-black/40 border border-white/10 p-12 md:p-16 text-center group"
+            className="relative overflow-hidden rounded-[2.5rem] bg-white/5 border border-white/10 p-12 md:p-16 text-center group"
           >
-             {/* Background Glow */}
-             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-radial from-[#FF33C5]/10 to-transparent blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
-             
              <div className="relative z-10">
                <h2 className="text-4xl md:text-5xl font-lalezar text-white mb-6">
-                 Listen <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF33C5] to-[#BF5AF2]">Everywhere</span>
+                 Listen Everywhere
                </h2>
                <p className="text-white/60 mb-12 max-w-xl mx-auto font-inter text-lg">
                  Follow DJ DynaMeets on your favorite music platforms to stay updated with the latest releases
