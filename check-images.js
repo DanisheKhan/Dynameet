@@ -21,7 +21,7 @@ const imageFiles = files
     const sizeKB = (stats.size / 1024).toFixed(2);
     const sizeMB = (stats.size / (1024 * 1024)).toFixed(2);
     totalSize += stats.size;
-    
+
     return {
       name: file,
       sizeKB,

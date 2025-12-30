@@ -4,15 +4,15 @@ import PropTypes from 'prop-types';
 /**
  * OptimizedImage component with lazy loading, blur placeholder, and error handling
  */
-const OptimizedImage = ({ 
-  src, 
-  alt, 
-  className = '', 
+const OptimizedImage = ({
+  src,
+  alt,
+  className = '',
   loading = 'lazy',
   fetchPriority = 'auto',
   onLoad,
   onError,
-  ...props 
+  ...props
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [hasError, setHasError] = useState(false);
@@ -33,7 +33,7 @@ const OptimizedImage = ({
       {!isLoaded && !hasError && (
         <div className="absolute inset-0 bg-gradient-to-br from-[#FF33C5]/10 to-[#BF5AF2]/10 animate-pulse" />
       )}
-      
+
       {/* Error state */}
       {hasError ? (
         <div className="absolute inset-0 flex items-center justify-center bg-white/5">

@@ -6,7 +6,7 @@ import { ViteImageOptimizer } from '@vheemstra/vite-plugin-imagemin';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
-    react(), 
+    react(),
     tailwindcss(),
     ViteImageOptimizer({
       // Optimize PNG images
