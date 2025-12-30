@@ -90,8 +90,8 @@ const NavBar = () => {
   }
 
   return (
-    <nav className={`fixed ${scrolled ? 'top-[12px] sm:top-[10px]' : 'top-[30px] sm:top-[25px]'} left-0 right-0 w-full flex justify-center px-3 sm:px-4 z-50 transition-all duration-300 ease-in-out`}>
-      <div className={`w-full max-w-[1328px] h-auto min-h-[52px] sm:min-h-[60px] md:min-h-[66px] rounded-[30px] sm:rounded-[40px] ${scrolled ? 'glass-premium' : 'glass'} flex flex-wrap md:flex-nowrap items-center justify-between px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-0 shadow-lg relative overflow-hidden transition-all duration-300`}>
+    <nav className={`fixed ${scrolled ? 'top-0 md:top-[12px]' : 'top-0 md:top-[30px]'} left-0 right-0 w-full flex justify-center px-0 md:px-4 z-50 transition-all duration-300 ease-in-out`}>
+      <div className={`w-full max-w-[1328px] h-auto min-h-[52px] sm:min-h-[60px] md:min-h-[66px] rounded-none md:rounded-[40px] ${scrolled ? 'glass-premium' : 'glass'} flex flex-wrap md:flex-nowrap items-center justify-between px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-0 shadow-lg relative overflow-hidden transition-all duration-300`}>
         {/* Logo */}
         <div className="flex items-center justify-between w-full md:w-auto">
           <div className="flex items-center gap-[6px] sm:gap-[10px] p-[6px] sm:p-[10px]">
