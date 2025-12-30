@@ -5,7 +5,7 @@ const Hero = () => {
     <section id="home" className="relative w-full min-h-screen overflow-hidden py-20 md:py-0 md:h-[832px]">
       {/* Background gradient blur effect */}
       <div
-        className="absolute left-[20%] top-[40%] w-[60%] h-[50%] rounded-full opacity-80"
+        className="absolute left-[20%] top-[40%] w-[60%] h-[50%] rounded-full opacity-80 animate-breathe"
         style={{
           background: "radial-gradient(ellipse at center, rgba(253,0,182,0.6) 0%, rgba(255,149,220,0.4) 30%, rgba(255,255,255,0.1) 70%, transparent 100%)",
           filter: "blur(120px)"
@@ -14,7 +14,7 @@ const Hero = () => {
 
       {/* Additional glow effects */}
       <div
-        className="absolute left-[25%] top-[45%] w-[50%] h-[40%] rounded-full opacity-60"
+        className="absolute left-[25%] top-[45%] w-[50%] h-[40%] rounded-full opacity-60 animate-breathe-delayed"
         style={{
           background: "radial-gradient(ellipse at center, rgba(255,51,197,0.5) 0%, rgba(253,0,182,0.3) 50%, transparent 100%)",
           filter: "blur(80px)"

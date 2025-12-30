@@ -10,7 +10,7 @@ import './styles/layout.css'
 
 export default function App() {
   return (
-    <div className="min-h-screen w-full text-white bg-[#0c0c0c] overflow-x-hidden flex flex-col">
+    <div className="min-h-screen w-full text-white bg-[#0c0c0c] bg-noise overflow-x-hidden flex flex-col">
       <NavBar />
       <div className="pt-[90px] flex-grow"> {/* Added padding to accommodate the floating navbar */}
         <Routes>

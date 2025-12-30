@@ -1,4 +1,4 @@
-import { Footer, PageLayout } from '../components'
+import { Footer, PageLayout, PageHeader, ContentSection } from '../components'
 import Music from '../components/sections/Music'
 import Button from '../components/ui/Button'
 
@@ -108,6 +108,12 @@ const MusicPlatforms = () => {
 export default function MusicPage() {
   return (
     <PageLayout>
+      <ContentSection className="pt-8 !pb-0">
+        <PageHeader 
+          title="Music"
+          description="Immerse yourself in the sonic world of DJ DynaMeets. From original productions to curated playlists, experience the rhythm."
+        />
+      </ContentSection>
       <Music />
       <FeaturedAlbum />
       <MusicPlatforms />

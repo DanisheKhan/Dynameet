@@ -9,25 +9,25 @@ const SimpleEvents = () => {
         <h2 className="font-lalezar text-[60px] text-white mb-12">Events</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="relative h-[450px] rounded-md overflow-hidden">
+          <div className="relative h-[450px] rounded-md overflow-hidden group hover:shadow-glow transition-all-300">
             <img
               src="/images/events-1.jpg"
               alt="DJ Performance"
-              className="w-full h-full object-cover object-[50%_30%] hover:scale-105 transition-transform duration-500"
+              className="w-full h-full object-cover object-[50%_30%] group-hover:scale-105 transition-transform duration-500"
             />
           </div>
-          <div className="relative h-[450px] rounded-md overflow-hidden">
+          <div className="relative h-[450px] rounded-md overflow-hidden group hover:shadow-glow transition-all-300">
             <img
               src="/images/events-3.jpg"
               alt="DJ Performance"
-              className="w-full h-full object-cover object-[50%_30%] hover:scale-105 transition-transform duration-500"
+              className="w-full h-full object-cover object-[50%_30%] group-hover:scale-105 transition-transform duration-500"
             />
           </div>
-          <div className="relative h-[450px] rounded-md overflow-hidden">
+          <div className="relative h-[450px] rounded-md overflow-hidden group hover:shadow-glow transition-all-300">
             <img
               src="/images/events-2.jpg"
               alt="DJ Performance"
-              className="w-full h-full object-cover object-[50%_30%] hover:scale-105"
+              className="w-full h-full object-cover object-[50%_30%] group-hover:scale-105 transition-transform duration-500"
             />
           </div>
         </div>
@@ -35,7 +35,7 @@ const SimpleEvents = () => {
         <div className="flex justify-center mt-12">
           <Link
             to="/events"
-            className="bg-[#FF6FCF] hover:bg-[#E91E63] text-white py-3 px-8 rounded-full font-medium flex items-center gap-2"
+            className="bg-gradient-to-r from-[#FF33C5] to-[#FD00B6] hover:opacity-90 text-white py-3 px-8 rounded-full font-medium flex items-center gap-2 interactive-hover glow transition-all-300"
           >
             See More
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

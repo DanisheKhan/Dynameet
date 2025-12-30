@@ -7,10 +7,10 @@ const items = [
 
 export default function About() {
   return (
-    <section id="about" className="w-full relative bg-[#0c0c0c] min-h-screen">
+    <section id="about" className="w-full relative bg-[#0c0c0c]">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section with Split Layout */}
-        <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 py-16 lg:py-20">
+        <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 pb-16 pt-8 lg:pb-20 lg:pt-12">
           {/* Left Content */}
           <div className="order-1 lg:order-1 flex flex-col justify-center">
             <h1 className="font-lalezar text-6xl md:text-7xl lg:text-8xl xl:text-[100px] leading-tight mb-8">
@@ -56,15 +56,15 @@ export default function About() {
           </h2>
 
           {/* Sound Cards Grid */}
+          {/* Sound Cards Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {items.map((item) => (
               <div key={item.title} className="group relative">
-                {/* Card background with gradient border effect */}
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm"></div>
-                <div className="relative rounded-2xl bg-black/40 backdrop-blur-sm border border-white/10 p-6 hover:border-[#F042B6]/50">
+                {/* Card background with glass effect */}
+                <div className="relative rounded-2xl glass-premium p-6 transition-all-300 group-hover:shadow-glow group-hover:-translate-y-2 h-full">
                   {/* Icon */}
-                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#F042B6]/20 to-[#F042B6]/5 flex items-center justify-center mb-4">
-                    <div className="w-4 h-4 rounded-full bg-[#F042B6]"></div>
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#F042B6]/20 to-[#F042B6]/5 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-4 h-4 rounded-full bg-[#F042B6] shadow-[0_0_10px_#F042B6]"></div>
                   </div>
 
                   {/* Content */}
@@ -81,7 +81,7 @@ export default function About() {
 
           {/* Discover More Button */}
           <div className="flex justify-center">
-            <button className="group relative px-8 py-4 rounded-2xl bg-gradient-to-r from-[#F042B6] to-[#E91E63] hover:from-[#E91E63] hover:to-[#F042B6] transform hover:scale-105 hover:shadow-lg hover:shadow-[#F042B6]/25">
+            <button className="group relative px-8 py-4 rounded-2xl bg-gradient-to-r from-[#F042B6] to-[#E91E63] hover:opacity-90 interactive-hover glow">
               <span className="font-poppins text-[16px] font-medium text-white">
                 Discover More
               </span>

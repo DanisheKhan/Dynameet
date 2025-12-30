@@ -12,45 +12,45 @@ const Contact = () => {
             <form className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block font-medium text-white mb-2">Name</label>
+                  <label htmlFor="name" className="block font-poppins font-medium text-white mb-2">Name</label>
                   <input
                     type="text"
                     id="name"
-                    className="w-full bg-[#1a1a1a] border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[#FF33C5]"
+                    className="w-full glass bg-transparent border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#FF33C5] font-poppins transition-colors duration-300"
                     placeholder="Your name"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block font-medium text-white mb-2">Email</label>
+                  <label htmlFor="email" className="block font-poppins font-medium text-white mb-2">Email</label>
                   <input
                     type="email"
                     id="email"
-                    className="w-full bg-[#1a1a1a] border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[#FF33C5]"
+                    className="w-full glass bg-transparent border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#FF33C5] font-poppins transition-colors duration-300"
                     placeholder="Your email"
                   />
                 </div>
               </div>
               <div>
-                <label htmlFor="subject" className="block font-medium text-white mb-2">Subject</label>
+                <label htmlFor="subject" className="block font-poppins font-medium text-white mb-2">Subject</label>
                 <input
                   type="text"
                   id="subject"
-                  className="w-full bg-[#1a1a1a] border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[#FF33C5]"
+                  className="w-full glass bg-transparent border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#FF33C5] font-poppins transition-colors duration-300"
                   placeholder="Subject"
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block font-medium text-white mb-2">Message</label>
+                <label htmlFor="message" className="block font-poppins font-medium text-white mb-2">Message</label>
                 <textarea
                   id="message"
                   rows="5"
-                  className="w-full bg-[#1a1a1a] border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[#FF33C5]"
+                  className="w-full glass bg-transparent border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#FF33C5] font-poppins transition-colors duration-300"
                   placeholder="Your message"
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="bg-gradient-to-r from-[#FF33C5] to-[#FD00B6] text-white font-medium py-3 px-8 rounded-lg hover:opacity-90"
+                className="bg-gradient-to-r from-[#FF33C5] to-[#FD00B6] text-white font-medium py-3 px-8 rounded-lg interactive-hover glow font-poppins"
               >
                 Send Message
               </button>
@@ -61,7 +61,7 @@ const Contact = () => {
           <div className="w-full md:w-1/2 space-y-8">
             <div>
               <h3 className="font-lalezar text-[28px] text-white mb-6">Contact Information</h3>
-              <div className="space-y-6">
+              <div className="space-y-6 font-poppins">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full bg-[#FF33C5]/20 flex items-center justify-center flex-shrink-0">
                     <svg className="w-5 h-5 text-[#FF33C5]" fill="currentColor" viewBox="0 0 20 20">
@@ -105,7 +105,7 @@ const Contact = () => {
                       <a
                         key={index}
                         href={social.href}
-                        className="w-10 h-10 rounded-full bg-[#1a1a1a] border border-white/10 flex items-center justify-center hover:bg-[#FF33C5] hover:border-transparent"
+                        className="w-10 h-10 rounded-full bg-[#1a1a1a] border border-white/10 flex items-center justify-center hover:bg-[#FF33C5] hover:border-transparent interactive-hover"
                         aria-label={social.label}
                       >
                         <span className="text-lg">{social.icon}</span>
@@ -117,13 +117,13 @@ const Contact = () => {
             </div>
 
             {/* Map or Additional Info */}
-            <div className="mt-8 bg-gradient-to-br from-[#1a1a1a] to-[#0a0a0a] p-6 rounded-xl border border-white/10">
-              <h4 className="font-bold text-lg text-white mb-3">Booking Information</h4>
-              <p className="text-white/70 mb-4">
+            <div className="mt-8 glass-premium p-6 rounded-xl border border-white/10">
+              <h4 className="font-lalezar text-lg text-white mb-3">Booking Information</h4>
+              <p className="font-poppins text-white/70 mb-4">
                 For event bookings and performance inquiries, please contact us directly by email or phone.
                 We're available for club events, private parties, corporate functions, and festivals.
               </p>
-              <button className="text-[#FF33C5] font-medium hover:underline">
+              <button className="font-poppins text-[#FF33C5] font-medium hover:underline">
                 Download Press Kit
               </button>
             </div>

@@ -13,7 +13,7 @@ const Discography = () => {
             {[...discographyData, ...discographyData, ...discographyData, ...discographyData].map((disc, index) => (
               <div
                 key={index}
-                className="relative w-[307px] h-[495px] rounded-[10px] overflow-hidden group cursor-pointer flex-shrink-0"
+                className="relative w-[307px] h-[495px] rounded-[10px] overflow-hidden group cursor-pointer flex-shrink-0 transition-all-300 hover:-translate-y-2 glow"
               >
                 <img
                   src={`/images/${disc.img}`}
