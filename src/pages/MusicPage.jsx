@@ -117,15 +117,15 @@ export default function MusicPage() {
 
           {/* 2. Featured Album Card */}
           <motion.div variants={itemVariants} className="mb-32">
-             <div className="relative rounded-3xl overflow-hidden bg-white/5 border border-white/10 backdrop-blur-sm p-8 md:p-12">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                   <div className="relative group">
+             <div className="relative rounded-3xl overflow-hidden bg-white/5 border border-white/10 backdrop-blur-sm p-6 md:p-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                   <div className="relative group max-w-sm mx-auto w-full">
                       <img 
                          src="/images/disc-6-2ed311.jpg" 
                          alt="Featured Album" 
                          className="w-full rounded-xl shadow-2xl transition-transform duration-500 group-hover:scale-105 group-hover:rotate-1" 
                       />
-                      <div className="absolute -top-4 -right-4 w-16 h-16 bg-[#FF33C5] rounded-full flex items-center justify-center font-bold text-white shadow-lg animate-bounce">
+                      <div className="absolute -top-4 -right-4 w-14 h-14 bg-[#FF33C5] rounded-full flex items-center justify-center font-bold text-white text-sm shadow-lg animate-bounce">
                         NEW
                       </div>
                    </div>
@@ -186,22 +186,35 @@ export default function MusicPage() {
           </div>
 
           {/* 4. Listen Everywhere */}
-          <motion.div variants={itemVariants} className="text-center bg-[#1A1A1A]/50 rounded-3xl p-12 border border-white/5 backdrop-blur-md">
-             <h2 className="text-3xl md:text-4xl font-lalezar text-white mb-4">Listen Everywhere</h2>
-             <p className="text-white/60 mb-10 max-w-xl mx-auto">Follow DJ DynaMeets on your favorite music platforms to stay updated with the latest releases</p>
+          <motion.div 
+            variants={itemVariants} 
+            className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-b from-white/5 to-black/40 border border-white/10 p-12 md:p-16 text-center group"
+          >
+             {/* Background Glow */}
+             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-radial from-[#FF33C5]/10 to-transparent blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
              
-             <div className="flex flex-wrap justify-center gap-6">
-                {platforms.map((platform, idx) => (
-                   <motion.a 
-                     key={idx}
-                     whileHover={{ y: -5 }}
-                     href={platform.url} 
-                     className="w-24 h-24 rounded-2xl bg-black/40 border border-white/10 flex flex-col items-center justify-center gap-2 text-white hover:border-[#FF33C5] hover:text-[#FF33C5] transition-all duration-300 shadow-xl"
-                   >
-                      <span className="text-3xl">{platform.icon}</span>
-                      <span className="text-xs font-bold tracking-wider">{platform.name}</span>
-                   </motion.a>
-                ))}
+             <div className="relative z-10">
+               <h2 className="text-4xl md:text-5xl font-lalezar text-white mb-6">
+                 Listen <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF33C5] to-[#BF5AF2]">Everywhere</span>
+               </h2>
+               <p className="text-white/60 mb-12 max-w-xl mx-auto font-inter text-lg">
+                 Follow DJ DynaMeets on your favorite music platforms to stay updated with the latest releases
+               </p>
+               
+               <div className="flex flex-wrap justify-center gap-6 md:gap-8">
+                  {platforms.map((platform, idx) => (
+                     <motion.a 
+                       key={idx}
+                       whileHover={{ y: -8, scale: 1.05 }}
+                       whileTap={{ scale: 0.95 }}
+                       href={platform.url} 
+                       className="w-28 h-28 md:w-32 md:h-32 rounded-3xl bg-white/5 border border-white/10 flex flex-col items-center justify-center gap-3 text-white transition-all duration-300 hover:bg-[#FF33C5] hover:border-[#FF33C5] hover:shadow-[0_0_30px_rgba(255,51,197,0.4)] group/icon"
+                     >
+                        <span className="text-4xl filter drop-shadow-md group-hover/icon:scale-110 transition-transform duration-300">{platform.icon}</span>
+                        <span className="text-xs font-bold tracking-wider font-lalezar opacity-70 group-hover/icon:opacity-100">{platform.name}</span>
+                     </motion.a>
+                  ))}
+               </div>
              </div>
           </motion.div>
 
