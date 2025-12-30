@@ -6,7 +6,7 @@ const Button = ({
   onClick,
   ...props
 }) => {
-  const baseClasses = "relative font-poppins font-medium text-white transition-all duration-300 group"
+  const baseClasses = "relative font-poppins font-medium text-white group"
 
   const variants = {
     primary: "bg-gradient-to-r from-[#FF33C5] to-[#FD00B6] hover:from-[#FD00B6] hover:to-[#FF33C5]",

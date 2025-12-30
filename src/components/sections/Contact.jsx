@@ -50,7 +50,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="bg-gradient-to-r from-[#FF33C5] to-[#FD00B6] text-white font-medium py-3 px-8 rounded-lg hover:opacity-90 transition-all"
+                className="bg-gradient-to-r from-[#FF33C5] to-[#FD00B6] text-white font-medium py-3 px-8 rounded-lg hover:opacity-90"
               >
                 Send Message
               </button>
@@ -73,7 +73,7 @@ const Contact = () => {
                     <h4 className="font-bold text-lg text-white mb-1">Email</h4>
                     <a
                       href={`mailto:${contactInfo.email}`}
-                      className="text-white/70 hover:text-[#FF33C5] transition-colors"
+                      className="text-white/70 hover:text-[#FF33C5]"
                     >
                       {contactInfo.email}
                     </a>
@@ -90,7 +90,7 @@ const Contact = () => {
                     <h4 className="font-bold text-lg text-white mb-1">Phone</h4>
                     <a
                       href={`tel:+91${contactInfo.phone.split(' ')[0]}`}
-                      className="text-white/70 hover:text-[#FF33C5] transition-colors"
+                      className="text-white/70 hover:text-[#FF33C5]"
                     >
                       {contactInfo.phone}
                     </a>
@@ -105,7 +105,7 @@ const Contact = () => {
                       <a
                         key={index}
                         href={social.href}
-                        className="w-10 h-10 rounded-full bg-[#1a1a1a] border border-white/10 flex items-center justify-center hover:bg-[#FF33C5] hover:border-transparent transition-all"
+                        className="w-10 h-10 rounded-full bg-[#1a1a1a] border border-white/10 flex items-center justify-center hover:bg-[#FF33C5] hover:border-transparent"
                         aria-label={social.label}
                       >
                         <span className="text-lg">{social.icon}</span>

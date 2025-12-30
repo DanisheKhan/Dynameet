@@ -35,7 +35,7 @@ export default function Music() {
               <img
                 src="/images/disc-8-607711.jpg"
                 alt="DJ DynaMeetss Vinyl"
-                className="w-full h-full object-cover rounded-full shadow-2xl animate-[spin_20s_linear_infinite] border-8 border-white/20"
+                className="w-full h-full object-cover rounded-full shadow-2xl border-8 border-white/20"
               />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-[80px] h-[80px] rounded-full bg-white/90 shadow-lg"></div>
@@ -51,7 +51,7 @@ export default function Music() {
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Video 1 */}
-          <div className="bg-black rounded-lg overflow-hidden shadow-xl border border-gray-800 hover:border-gray-600 transition-colors duration-300">
+          <div className="bg-black rounded-lg overflow-hidden shadow-xl border border-gray-800 hover:border-gray-600">
             <div className="aspect-video">
               <iframe
                 width="100%"
@@ -68,7 +68,7 @@ export default function Music() {
           </div>
 
           {/* Video 2 */}
-          <div className="bg-black rounded-lg overflow-hidden shadow-xl border border-gray-800 hover:border-gray-600 transition-colors duration-300">
+          <div className="bg-black rounded-lg overflow-hidden shadow-xl border border-gray-800 hover:border-gray-600">
             <div className="aspect-video">
               <iframe
                 width="100%"
@@ -85,7 +85,7 @@ export default function Music() {
           </div>
 
           {/* Video 3 */}
-          <div className="bg-black rounded-lg overflow-hidden shadow-xl border border-gray-800 hover:border-gray-600 transition-colors duration-300">
+          <div className="bg-black rounded-lg overflow-hidden shadow-xl border border-gray-800 hover:border-gray-600">
             <div className="aspect-video">
               <iframe
                 width="100%"

@@ -61,7 +61,7 @@ export default function About() {
               <div key={item.title} className="group relative">
                 {/* Card background with gradient border effect */}
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm"></div>
-                <div className="relative rounded-2xl bg-black/40 backdrop-blur-sm border border-white/10 p-6 hover:border-[#F042B6]/50 transition-all duration-300">
+                <div className="relative rounded-2xl bg-black/40 backdrop-blur-sm border border-white/10 p-6 hover:border-[#F042B6]/50">
                   {/* Icon */}
                   <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#F042B6]/20 to-[#F042B6]/5 flex items-center justify-center mb-4">
                     <div className="w-4 h-4 rounded-full bg-[#F042B6]"></div>
@@ -81,7 +81,7 @@ export default function About() {
 
           {/* Discover More Button */}
           <div className="flex justify-center">
-            <button className="group relative px-8 py-4 rounded-2xl bg-gradient-to-r from-[#F042B6] to-[#E91E63] hover:from-[#E91E63] hover:to-[#F042B6] transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[#F042B6]/25">
+            <button className="group relative px-8 py-4 rounded-2xl bg-gradient-to-r from-[#F042B6] to-[#E91E63] hover:from-[#E91E63] hover:to-[#F042B6] transform hover:scale-105 hover:shadow-lg hover:shadow-[#F042B6]/25">
               <span className="font-poppins text-[16px] font-medium text-white">
                 Discover More
               </span>

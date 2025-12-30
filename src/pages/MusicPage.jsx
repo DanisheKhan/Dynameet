@@ -90,10 +90,10 @@ const MusicPlatforms = () => {
         <div className="flex flex-wrap justify-center gap-6">
           {platforms.map(platform => (
             <a key={platform.name} href="#" className="group">
-              <div className="w-[180px] h-[180px] bg-[#1A1D23] rounded-xl flex flex-col items-center justify-center border border-[#2B303B] hover:border-[#FF33C5] transition-all p-6 hover:bg-[#1A1D23]/80 hover:shadow-lg">
+              <div className="w-[180px] h-[180px] bg-[#1A1D23] rounded-xl flex flex-col items-center justify-center border border-[#2B303B] hover:border-[#FF33C5] p-6 hover:bg-[#1A1D23]/80 hover:shadow-lg">
                 <div className="text-4xl mb-4">{platform.icon}</div>
                 <div className="text-white font-medium text-lg">{platform.name}</div>
-                <div className="mt-2 text-[#FF33C5] text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="mt-2 text-[#FF33C5] text-sm opacity-0 group-hover:opacity-100">
                   Listen Now →
                 </div>
               </div>

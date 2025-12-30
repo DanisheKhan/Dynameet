@@ -89,8 +89,8 @@ const NavBar = () => {
   }
 
   return (
-    <nav className={`fixed ${scrolled ? 'top-[10px]' : 'top-[25px]'} left-0 right-0 w-full flex justify-center px-4 z-50 transition-all duration-300`}>
-      <div className={`w-full max-w-[1328px] h-auto min-h-[66px] rounded-[40px] ${scrolled ? 'bg-black/60' : 'bg-white/5'} backdrop-blur-md flex flex-wrap md:flex-nowrap items-center justify-between px-4 md:px-6 py-2 md:py-0 shadow-lg relative transition-all duration-300 overflow-hidden`}>
+    <nav className={`fixed ${scrolled ? 'top-[10px]' : 'top-[25px]'} left-0 right-0 w-full flex justify-center px-4 z-50`}>
+      <div className={`w-full max-w-[1328px] h-auto min-h-[66px] rounded-[40px] ${scrolled ? 'bg-black/60' : 'bg-white/5'} backdrop-blur-md flex flex-wrap md:flex-nowrap items-center justify-between px-4 md:px-6 py-2 md:py-0 shadow-lg relative overflow-hidden`}>
         {/* Logo */}
         <div className="flex items-center justify-between w-full md:w-auto">
           <div className="flex items-center gap-[10px] p-[10px]">
@@ -99,7 +99,7 @@ const NavBar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="block md:hidden text-white p-2 rounded-full hover:bg-white/10 transition-colors duration-200"
+            className="block md:hidden text-white p-2 rounded-full hover:bg-white/10"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -122,7 +122,7 @@ const NavBar = () => {
               <Link
                 key={item.label}
                 to={item.href}
-                className={`px-3 py-2 rounded-full cursor-pointer hover:text-[#FF33C5] hover:bg-white/5 transition-all duration-200 ${activeItem === item.label ? 'text-[#FF33C5] bg-white/5' : ''}`}
+                className={`px-3 py-2 rounded-full cursor-pointer hover:text-[#FF33C5] hover:bg-white/5 ${activeItem === item.label ? 'text-[#FF33C5] bg-white/5' : ''}`}
                 onClick={() => {
                   setIsMobileMenuOpen(false)
                   // Scroll to top when route link is clicked
@@ -134,7 +134,7 @@ const NavBar = () => {
             ) : (
               <a
                 key={item.label}
-                className={`px-3 py-2 rounded-full cursor-pointer hover:text-[#FF33C5] hover:bg-white/5 transition-all duration-200 ${activeItem === item.label ? 'text-[#FF33C5] bg-white/5' : ''}`}
+                className={`px-3 py-2 rounded-full cursor-pointer hover:text-[#FF33C5] hover:bg-white/5 ${activeItem === item.label ? 'text-[#FF33C5] bg-white/5' : ''}`}
                 onClick={() => handleNavClick(item)}
               >
                 {item.label}

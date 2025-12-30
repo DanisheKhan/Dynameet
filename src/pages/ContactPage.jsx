@@ -63,7 +63,7 @@ export default function ContactPage() {
               <div>
                 <button
                   type="submit"
-                  className="bg-gradient-to-r from-[#FF33C5] to-[#BF5AF2] text-white font-medium py-3 px-10 hover:shadow-lg hover:shadow-[#FF33C5]/50 transition-all duration-300 focus:outline-none rounded-md"
+                  className="bg-gradient-to-r from-[#FF33C5] to-[#BF5AF2] text-white font-medium py-3 px-10 hover:shadow-lg hover:shadow-[#FF33C5]/50 focus:outline-none rounded-md"
                 >
                   SUBMIT
                 </button>

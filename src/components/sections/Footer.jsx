@@ -41,7 +41,7 @@ const Footer = () => {
             </h2>
 
             {/* Description with improved typography - reduced margins */}
-            <p className="font-inter text-base leading-relaxed text-white/95 max-w-lg mb-6 animate-fade-in-up">
+            <p className="font-inter text-base leading-relaxed text-white/95 max-w-lg mb-6">
               Premier DJ and entertainment services for all your events.
               Bringing the most vibrant and energetic performances to transform your events into unforgettable experiences.
             </p>
@@ -61,7 +61,7 @@ const Footer = () => {
                   <div className="font-inter font-bold text-base text-white mb-0.5">Email Us</div>
                   <a
                     href={`mailto:${contactInfo.email}`}
-                    className="font-inter text-sm text-white/90 hover:text-white transition-all hover:underline decoration-white/30 underline-offset-4"
+                    className="font-inter text-sm text-white/90 hover:text-white hover:underline decoration-white/30 underline-offset-4"
                   >
                     {contactInfo.email}
                   </a>
@@ -80,7 +80,7 @@ const Footer = () => {
                   <div className="font-inter font-bold text-base text-white mb-0.5">Call Us</div>
                   <a
                     href={`tel:+91${contactInfo.phone.split(' ')[0]}`}
-                    className="font-inter text-sm text-white/90 hover:text-white transition-all hover:underline decoration-white/30 underline-offset-4"
+                    className="font-inter text-sm text-white/90 hover:text-white hover:underline decoration-white/30 underline-offset-4"
                   >
                     {contactInfo.phone}
                   </a>
@@ -95,8 +95,8 @@ const Footer = () => {
                   key={index}
                   href={social.href}
                   className="w-10 h-10 rounded-full border border-white/40 bg-white/20 backdrop-blur-md hover:bg-white/30 
-                  transition-all duration-300 cursor-pointer flex items-center justify-center shadow-lg shadow-pink-500/20
-                  hover:shadow-xl hover:shadow-pink-500/30 hover:scale-110 social-icon-pulse"
+                  cursor-pointer flex items-center justify-center shadow-lg shadow-pink-500/20
+                  hover:shadow-xl hover:shadow-pink-500/30 hover:scale-110"
                   aria-label={social.label}
                 >
                   {socialIcons[social.label]}
@@ -111,7 +111,7 @@ const Footer = () => {
                   <li key={index}>
                     <Link
                       to={item.href}
-                      className="font-poppins text-sm font-medium text-white/90 hover:text-white transition-all footer-link-hover"
+                      className="font-poppins text-sm font-medium text-white/90 hover:text-white footer-link-hover"
                     >
                       {item.label}
                     </Link>

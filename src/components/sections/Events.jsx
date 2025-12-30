@@ -47,7 +47,7 @@ const Events = () => {
             <p className="text-gray-400 mb-4">
               Want to see us live? Check out our upcoming events
             </p>
-            <button className="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all transform hover:scale-105">
+            <button className="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transform hover:scale-105">
               View All Events
             </button>
           </div>
