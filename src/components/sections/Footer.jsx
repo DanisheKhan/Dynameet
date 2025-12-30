@@ -112,7 +112,7 @@ const Footer = () => {
               {/* Glow behind image */}
               <div className="absolute inset-0 bg-gradient-radial from-[#FF33C5]/20 to-transparent blur-3xl rounded-full"></div>
               <img
-                src="/images/footerImg.png"
+                src="/image/5.png"
                 alt="DJ DynaMeetss"
                 className="w-full h-full object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700 ease-out"
               />

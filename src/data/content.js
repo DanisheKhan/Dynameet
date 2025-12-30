@@ -8,23 +8,33 @@ export const navigationItems = [
 
 export const discographyData = [
   {
-    img: "disc-1-60f8da.jpg",
+    img: "1.jpeg",
+    title: "PERFORMING LIVE IN PRAGUE",
+  },
+  {
+    img: "9.jpeg",
     title: "PERFORMING LIVE IN CHANDIGARH",
-    date: "JUNE 2024",
+    date: "JUNE 2025",
   },
   {
-    img: "disc-2-108ec0.jpg",
-    title: "DUBAI DynaMeetsS",
-    subtitle: "PERFORMING LIVE",
+    img: "10.jpeg",
+    title: "PERFORMING LIVE IN DUBAI",
   },
   {
-    img: "disc-4-520e12.jpg",
-    title: "LIVE SET",
+    img: "11.jpeg",
+    title: "PERFORMING LIVE IN AGRA",
   },
   {
-    img: "disc-5-5d312e.jpg",
-    title: "DJ DynaMeetsS",
-    subtitle: "LIVE PERFORMANCE",
+    img: "12.jpeg",
+    title: "PERFORMING LIVE IN MONTENEGRO",
+  },
+  {
+    img: "13.jpeg",
+    title: "PERFORMING LIVE IN MUMBAI",
+  },
+  {
+    img: "14.jpeg",
+    title: "PERFORMING LIVE IN VIENNA",
   },
 ];
 

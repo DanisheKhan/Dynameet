@@ -50,7 +50,7 @@ const Discography = () => {
                 className="relative w-[200px] xs:w-[240px] sm:w-[280px] lg:w-[307px] h-[320px] xs:h-[380px] sm:h-[450px] lg:h-[495px] rounded-xl sm:rounded-2xl overflow-hidden group cursor-pointer flex-shrink-0 border border-white/5 bg-white/5"
               >
                 <img
-                  src={`/images/${disc.img}`}
+                  src={`/image/${disc.img}`}
                   alt={disc.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />

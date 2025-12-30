@@ -76,7 +76,7 @@ const Hero = () => {
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100%] h-[100%] bg-gradient-radial from-[#FF33C5]/20 to-transparent blur-3xl rounded-full"></div>
 
               <img
-                src="/images/hero-main-5b069a.png"
+                src="/image/6.jpeg"
                 alt="DJ DynaMeetss"
                 className="relative w-full h-full object-contain drop-shadow-2xl"
               />

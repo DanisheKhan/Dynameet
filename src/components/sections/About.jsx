@@ -42,7 +42,7 @@ export default function About() {
               style={{ background: 'radial-gradient(circle, rgba(240,66,182,0.8) 0%, rgba(240,66,182,0.3) 50%, transparent 100%)' }} />
             {/* Main image */}
             <img
-              src="/images/about-hero-55a245.png"
+              src="/image/7.jpeg"
               alt="Diya Singh - DynaMeetss"
               className="relative z-10 w-full max-w-[280px] sm:max-w-[350px] lg:max-w-[500px] h-auto object-cover"
             />
