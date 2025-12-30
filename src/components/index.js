@@ -12,5 +12,4 @@ export { default as Events } from "./sections/Events";
 export { default as Discography } from "./sections/Discography";
 export { default as Contact } from "./sections/Contact";
 export { default as About } from "./sections/About";
-export { default as Music } from "./sections/Music";
 export { default as Footer } from "./sections/Footer";

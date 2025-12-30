@@ -1,0 +1,28 @@
+
+> DynaMeetss@0.0.0 lint
+> eslint .
+
+
+C:\Users\khand\Desktop\Web Projects\Dynameet\src\components\sections\Discography.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\khand\Desktop\Web Projects\Dynameet\src\components\sections\Footer.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\khand\Desktop\Web Projects\Dynameet\src\components\sections\Hero.jsx
+  1:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\khand\Desktop\Web Projects\Dynameet\src\components\sections\NavBar.jsx
+  3:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\khand\Desktop\Web Projects\Dynameet\src\pages\AboutPage.jsx
+  3:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\khand\Desktop\Web Projects\Dynameet\src\pages\ContactPage.jsx
+  3:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\khand\Desktop\Web Projects\Dynameet\src\pages\MusicPage.jsx
+  3:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+Γ£û 7 problems (7 errors, 0 warnings)
+
