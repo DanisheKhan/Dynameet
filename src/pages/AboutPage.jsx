@@ -84,6 +84,7 @@ export default function AboutPage() {
                 <img
                   src="/image/7.jpeg"
                   alt="Diya Singh - DJ DynaMeets"
+                  loading="lazy"
                   className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105"
                 />
 

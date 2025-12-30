@@ -10,6 +10,8 @@ const Logo = ({ size = 'default', className = '' }) => {
       <img
         src="/image/logo.png"
         alt="DynaMeets Logo"
+        loading="eager"
+        fetchPriority="high"
         className="w-full h-full object-contain"
       />
     </div>

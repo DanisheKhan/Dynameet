@@ -5,6 +5,7 @@ export { default as PageLayout } from "./ui/PageLayout";
 export { default as PageHeader } from "./ui/PageHeader";
 export { default as ContentSection } from "./ui/ContentSection";
 export { default as ScrollToTop } from "./ui/ScrollToTop";
+export { default as OptimizedImage } from "./ui/OptimizedImage";
 
 // Section Components
 export { default as NavBar } from "./sections/NavBar";

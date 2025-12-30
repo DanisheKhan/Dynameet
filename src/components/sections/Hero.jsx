@@ -78,6 +78,8 @@ const Hero = () => {
               <img
                 src="/image/6.jpeg"
                 alt="DJ DynaMeetss"
+                loading="eager"
+                fetchPriority="high"
                 className="relative w-full h-full object-contain drop-shadow-2xl"
               />
             </div>

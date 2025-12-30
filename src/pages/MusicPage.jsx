@@ -77,6 +77,7 @@ export default function MusicPage() {
                   <img
                     src="/image/1.jpeg"
                     alt="Latest Release Vinyl"
+                    loading="lazy"
                     className="relative w-full aspect-square object-cover rounded-full border-4 border-white/10 shadow-2xl animate-[spin_10s_linear_infinite]"
                   />
                   <div className="absolute inset-0 flex items-center justify-center">
@@ -123,6 +124,7 @@ export default function MusicPage() {
                   <img
                     src="/image/13.jpeg"
                     alt="Featured Album"
+                    loading="lazy"
                     className="w-full rounded-xl shadow-2xl transition-transform duration-500 group-hover:scale-105 group-hover:rotate-1"
                   />
                   <div className="absolute -top-3 -right-3 w-12 h-12 bg-[#FF33C5] rounded-full flex items-center justify-center font-bold text-white text-xs shadow-lg animate-bounce">
