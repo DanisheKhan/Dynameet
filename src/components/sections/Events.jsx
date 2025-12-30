@@ -19,7 +19,7 @@ const Events = () => {
             <div className="relative aspect-[9/16] md:aspect-video">
               <video
                 className="w-full h-full object-cover"
-                controls
+                autoPlay
                 loop
                 muted
                 playsInline

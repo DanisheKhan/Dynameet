@@ -8,12 +8,12 @@ const Discography = () => {
           Discography
         </h2>
 
-        <div className="overflow-x-auto -mx-4 sm:-mx-6 lg:-mx-8">
-          <div className="flex gap-6 lg:gap-8 w-max px-4 sm:px-6 lg:px-8">
-            {discographyData.map((disc, index) => (
+        <div className="overflow-hidden -mx-4 sm:-mx-6 lg:-mx-8">
+          <div className="flex gap-6 lg:gap-8 animate-marquee w-max px-4 hover:pause-on-hover">
+            {[...discographyData, ...discographyData, ...discographyData, ...discographyData].map((disc, index) => (
               <div
                 key={index}
-                className="relative w-[307px] h-[495px] rounded-[10px] overflow-hidden group cursor-pointer"
+                className="relative w-[307px] h-[495px] rounded-[10px] overflow-hidden group cursor-pointer flex-shrink-0"
               >
                 <img
                   src={`/images/${disc.img}`}
