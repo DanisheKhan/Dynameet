@@ -4,7 +4,7 @@ export default function EventsPage() {
   return (
     <PageLayout>
       <ContentSection className="pt-8">
-        <PageHeader 
+        <PageHeader
           title="EVENTS"
           description="Join me for unforgettable nights of music, energy, and connection. From intimate underground sessions to massive festival stages."
         />

@@ -4,7 +4,7 @@ export default function AboutPage() {
   return (
     <PageLayout>
       <ContentSection className="pt-8">
-        <PageHeader 
+        <PageHeader
           title="About DJ DynaMeets"
           description="Discover the journey, passion, and artistry behind the music. From underground beginnings to electrifying performances worldwide."
         />
