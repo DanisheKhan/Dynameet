@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom';
-import { navigationItems, contactInfo } from '../../data/content';
+import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import { navigationItems, contactInfo } from '../../data/content'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -29,89 +30,107 @@ const Footer = () => {
     )
   };
 
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+  }
+
   return (
-    <footer id="footer" className="relative bg-gradient-to-br from-[#FD00B6] via-[#FF33C5] to-[#FF95DC]">
-      <div className="container mx-auto relative z-10">
-        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 py-12 px-6 lg:px-12">
-          {/* Left Column - Footer content */}
-          <div className="w-full lg:w-1/2 pt-2 flex flex-col justify-center">
-            {/* Logo with glow effect */}
-            <h2 className="font-lalezar text-4xl text-white mb-4 drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">
+    <footer id="footer" className="relative bg-black pt-20 pb-10 overflow-hidden">
+      {/* Ambient Background */}
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#FF33C5]/50 to-transparent"></div>
+      <div className="absolute -top-[200px] left-1/4 w-[500px] h-[500px] bg-[#FF33C5]/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+      <div className="container mx-auto px-6 lg:px-12 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+          
+          {/* Left Column - Content */}
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="flex flex-col items-center lg:items-start text-center lg:text-left"
+          >
+            <h2 className="font-lalezar text-6xl md:text-8xl text-transparent bg-clip-text bg-gradient-to-br from-white to-white/50 mb-6 drop-shadow-sm">
               DynaMeets
             </h2>
 
-            {/* Description with improved typography - reduced margins */}
-            <p className="font-inter text-base leading-relaxed text-white/95 max-w-lg mb-6">
-              Premier DJ and entertainment services for all your events.
-              Bringing the most vibrant and energetic performances to transform your events into unforgettable experiences.
+            <p className="font-poppins text-lg text-white/60 max-w-md mb-8 leading-relaxed">
+              Premier DJ and entertainment services transforming events into unforgettable sonic experiences.
             </p>
 
-            {/* Contact Information with improved styling - more compact */}
-            <div className="space-y-4 mb-6">
-              <div className="flex items-center gap-4 interactive-hover">
-                <div className="relative w-10 h-10">
-                  <div className="absolute inset-0 rounded-full bg-white/20 backdrop-blur-md border border-white/40 flex items-center justify-center shadow-lg shadow-pink-500/20">
-                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                    </svg>
-                  </div>
-                </div>
-                <div>
-                  <div className="font-inter font-bold text-base text-white mb-0.5">Email Us</div>
-                  <a
-                    href={`mailto:${contactInfo.email}`}
-                    className="font-inter text-sm text-white/90 hover:text-white hover:underline decoration-white/30 underline-offset-4"
-                  >
-                    {contactInfo.email}
-                  </a>
-                </div>
-              </div>
+            {/* Contact Info Grid */}
+            <div className="flex flex-col sm:flex-row gap-6 mb-10 w-full sm:w-auto">
+                <a href={`mailto:${contactInfo.email}`} className="group flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-[#FF33C5]/50 hover:bg-[#FF33C5]/10 transition-all duration-300">
+                    <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform text-[#FF33C5]">
+                        {socialIcons.Email}
+                    </div>
+                    <div className="text-left">
+                        <div className="text-xs text-white/50 uppercase tracking-widest font-bold">Email</div>
+                        <div className="text-sm text-white font-medium">{contactInfo.email}</div>
+                    </div>
+                </a>
 
-              <div className="flex items-center gap-4 interactive-hover">
-                <div className="relative w-10 h-10">
-                  <div className="absolute inset-0 rounded-full bg-white/20 backdrop-blur-md border border-white/40 flex items-center justify-center shadow-lg shadow-pink-500/20">
-                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-                    </svg>
-                  </div>
-                </div>
-                <div>
-                  <div className="font-inter font-bold text-base text-white mb-0.5">Call Us</div>
-                  <a
-                    href={`tel:+91${contactInfo.phone.split(' ')[0]}`}
-                    className="font-inter text-sm text-white/90 hover:text-white hover:underline decoration-white/30 underline-offset-4"
-                  >
-                    {contactInfo.phone}
-                  </a>
-                </div>
-              </div>
+                <a href={`tel:+91${contactInfo.phone.split(' ')[0]}`} className="group flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-[#FF33C5]/50 hover:bg-[#FF33C5]/10 transition-all duration-300">
+                    <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform text-[#FF33C5]">
+                        {socialIcons.Phone}
+                    </div>
+                    <div className="text-left">
+                         <div className="text-xs text-white/50 uppercase tracking-widest font-bold">Phone</div>
+                        <div className="text-sm text-white font-medium">{contactInfo.phone}</div>
+                    </div>
+                </a>
             </div>
 
-            {/* Social Icons with improved visuals - reduced size */}
-            <div className="flex items-center gap-4 mb-6">
-              {contactInfo.socialLinks.map((social, index) => (
-                <a
+            {/* Social Icons */}
+            <div className="flex items-center gap-4">
+               {contactInfo.socialLinks.map((social, index) => (
+                <motion.a
                   key={index}
+                  whileHover={{ y: -5, scale: 1.1 }}
                   href={social.href}
-                  className="w-10 h-10 rounded-full border border-white/40 bg-white/20 backdrop-blur-md hover:bg-white/30 
-                  cursor-pointer flex items-center justify-center shadow-lg shadow-pink-500/20
-                  hover:shadow-xl hover:shadow-pink-500/30 hover:scale-110"
+                  className="w-12 h-12 rounded-full border border-white/10 bg-white/5 hover:bg-[#FF33C5] hover:border-[#FF33C5] flex items-center justify-center text-white/70 hover:text-white transition-all duration-300 shadow-lg"
                   aria-label={social.label}
                 >
                   {socialIcons[social.label]}
-                </a>
+                </motion.a>
               ))}
             </div>
 
-            {/* Navigation Links with improved hover effects - more compact */}
-            <nav className="mb-6 border-t border-white/10 pt-6">
-              <ul className="flex flex-wrap gap-x-6 gap-y-3">
+          </motion.div>
+
+          {/* Right Column - Image */}
+          <motion.div 
+             initial={{ opacity: 0, scale: 0.9 }}
+             whileInView={{ opacity: 1, scale: 1 }}
+             viewport={{ once: true }}
+             transition={{ duration: 0.8 }}
+             className="relative flex justify-center lg:justify-end"
+          >
+             <div className="relative z-10 w-full max-w-md lg:max-w-lg aspect-square">
+                 {/* Glow behind image */}
+                 <div className="absolute inset-0 bg-gradient-radial from-[#FF33C5]/20 to-transparent blur-3xl rounded-full"></div>
+                 <img
+                    src="/images/footerImg.png"
+                    alt="DJ DynaMeetss"
+                    className="w-full h-full object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700 ease-out"
+                 />
+             </div>
+          </motion.div>
+        </div>
+
+        {/* Footer Bottom */}
+        <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+             {/* Nav Links */}
+            <nav>
+              <ul className="flex flex-wrap justify-center gap-6">
                 {navigationItems.map((item, index) => (
                   <li key={index}>
                     <Link
                       to={item.href}
-                      className="font-poppins text-sm font-medium text-white/90 hover:text-white footer-link-hover"
+                      onClick={() => window.scrollTo(0, 0)}
+                      className="font-poppins text-sm text-white/60 hover:text-[#FF33C5] transition-colors"
                     >
                       {item.label}
                     </Link>
@@ -120,22 +139,9 @@ const Footer = () => {
               </ul>
             </nav>
 
-            {/* Copyright with improved styling */}
-            <p className="font-inter text-xs text-white/70 border-t border-white/10 pt-4">
+            <p className="font-poppins text-xs text-white/40">
               © {currentYear} DynaMeets. All Rights Reserved.
             </p>
-          </div>
-
-          {/* Right Column - Image with improved styling and consistent alignment */}
-          <div className="w-full lg:w-1/2 pt-2 lg:pl-8 flex items-center justify-center">
-            <div className="h-[600px] w-full flex items-center justify-center">
-              <img
-                src="/images/footerImg.png"
-                alt="DJ DynaMeetss"
-                className="max-h-full max-w-full object-contain scale-110 px-4"
-              />
-            </div>
-          </div>
         </div>
       </div>
     </footer>

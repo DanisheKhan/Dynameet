@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { motion, AnimatePresence } from 'framer-motion'
 import { navigationItems } from '../../data/content'
 import { Logo } from '../'
 
@@ -117,18 +118,16 @@ const NavBar = () => {
           </button>
         </div>
 
-        {/* Navigation Items - Desktop and Mobile */}
-        <div className={`${isMobileMenuOpen ? 'flex' : 'hidden md:flex'} flex-col md:flex-row w-full md:w-auto items-center gap-4 md:gap-[37px] font-poppins text-[14px] font-medium text-white/90 py-4 md:py-0 ${isMobileMenuOpen ? 'mt-4 rounded-[20px] bg-black/30 p-4' : ''} md:ml-auto`}>
+        {/* Navigation Items - Desktop */}
+        <div className="hidden md:flex items-center gap-[37px] font-poppins text-[14px] font-medium text-white/90 md:ml-auto">
           {navigationItems.map((item) => (
             item.href.startsWith('/') ? (
               <Link
                 key={item.label}
                 to={item.href}
-                className={`px-3 py-2 rounded-full cursor-pointer hover:text-[#FF33C5] hover:bg-white/5 ${activeItem === item.label ? 'text-[#FF33C5] bg-white/5' : ''}`}
+                className={`px-3 py-2 rounded-full cursor-pointer transition-all duration-300 hover:text-[#FF33C5] hover:bg-white/5 hover:scale-105 active:scale-95 ${activeItem === item.label ? 'text-[#FF33C5] bg-white/5 shadow-[0_0_10px_rgba(255,51,197,0.2)]' : ''}`}
                 onClick={() => {
-                  setIsMobileMenuOpen(false)
-                  // Scroll to top when route link is clicked
-                  window.scrollTo(0, 0)
+                   window.scrollTo(0, 0)
                 }}
               >
                 {item.label}
@@ -136,7 +135,7 @@ const NavBar = () => {
             ) : (
               <a
                 key={item.label}
-                className={`px-3 py-2 rounded-full cursor-pointer hover:text-[#FF33C5] hover:bg-white/5 ${activeItem === item.label ? 'text-[#FF33C5] bg-white/5' : ''}`}
+                className={`px-3 py-2 rounded-full cursor-pointer transition-all duration-300 hover:text-[#FF33C5] hover:bg-white/5 hover:scale-105 active:scale-95 ${activeItem === item.label ? 'text-[#FF33C5] bg-white/5 shadow-[0_0_10px_rgba(255,51,197,0.2)]' : ''}`}
                 onClick={() => handleNavClick(item)}
               >
                 {item.label}
@@ -144,6 +143,43 @@ const NavBar = () => {
             )
           ))}
         </div>
+
+        {/* Navigation Items - Mobile */}
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <motion.div
+              initial={{ height: 0, opacity: 0, marginTop: 0 }}
+              animate={{ height: "auto", opacity: 1, marginTop: 16 }}
+              exit={{ height: 0, opacity: 0, marginTop: 0 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="flex flex-col w-full md:hidden items-center gap-4 font-poppins text-[14px] font-medium text-white/90 rounded-[20px] bg-black/40 p-4 border border-white/10 backdrop-blur-md overflow-hidden"
+            >
+              {navigationItems.map((item) => (
+                item.href.startsWith('/') ? (
+                  <Link
+                    key={item.label}
+                    to={item.href}
+                    className={`px-4 py-2 w-full text-center rounded-xl cursor-pointer transition-all duration-300 hover:text-[#FF33C5] hover:bg-white/5 ${activeItem === item.label ? 'text-[#FF33C5] bg-white/5 shadow-inner' : ''}`}
+                    onClick={() => {
+                      setIsMobileMenuOpen(false)
+                      window.scrollTo(0, 0)
+                    }}
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={item.label}
+                    className={`px-4 py-2 w-full text-center rounded-xl cursor-pointer transition-all duration-300 hover:text-[#FF33C5] hover:bg-white/5 ${activeItem === item.label ? 'text-[#FF33C5] bg-white/5 shadow-inner' : ''}`}
+                    onClick={() => handleNavClick(item)}
+                  >
+                    {item.label}
+                  </a>
+                )
+              ))}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </nav>
   )

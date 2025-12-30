@@ -117,15 +117,15 @@ export default function MusicPage() {
 
           {/* 2. Featured Album Card */}
           <motion.div variants={itemVariants} className="mb-32">
-             <div className="relative rounded-3xl overflow-hidden bg-white/5 border border-white/10 backdrop-blur-sm p-6 md:p-10">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                   <div className="relative group max-w-sm mx-auto w-full">
+             <div className="relative rounded-3xl overflow-hidden bg-white/5 border border-white/10 backdrop-blur-sm p-6 md:p-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                   <div className="relative group max-w-[300px] mx-auto w-full">
                       <img 
                          src="/images/disc-6-2ed311.jpg" 
                          alt="Featured Album" 
                          className="w-full rounded-xl shadow-2xl transition-transform duration-500 group-hover:scale-105 group-hover:rotate-1" 
                       />
-                      <div className="absolute -top-4 -right-4 w-14 h-14 bg-[#FF33C5] rounded-full flex items-center justify-center font-bold text-white text-sm shadow-lg animate-bounce">
+                      <div className="absolute -top-3 -right-3 w-12 h-12 bg-[#FF33C5] rounded-full flex items-center justify-center font-bold text-white text-xs shadow-lg animate-bounce">
                         NEW
                       </div>
                    </div>
