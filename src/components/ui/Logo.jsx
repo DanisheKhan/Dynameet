@@ -1,6 +1,6 @@
 const Logo = ({ size = 'default', className = '' }) => {
   const sizes = {
-    small: 'w-[40px] h-[40px]',
+    small: 'w-[30px] h-[30px]',
     default: 'w-[200px] h-[60px]',
     large: 'w-[80px] h-[80px]'
   }
