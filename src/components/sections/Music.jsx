@@ -1,6 +1,6 @@
 export default function Music() {
   return (
-    <section id="music" className="w-full relative py-16">
+    <section id="music" className="w-full relative pb-16 pt-0">
       {/* Background blur elements */}
       <div
         className="absolute left-[10%] top-[20%] w-[60%] h-[50%] rounded-full opacity-70 animate-breathe"
@@ -19,11 +19,11 @@ export default function Music() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Hero Section */}
-        <div className="flex flex-col md:flex-row items-center justify-between pt-20 pb-8">
+        <div className="flex flex-col md:flex-row items-center justify-between pt-4 pb-8">
           <div className="max-w-[600px] md:pr-8">
-            <h1 className="font-lalezar text-5xl md:text-7xl lg:text-[90px] leading-tight gradient-text drop-shadow-lg">
-              <span className="block">DJ DynaMeetsS</span>
-              <span className="block text-white bg-clip-text text-white bg-none">MUSIC</span>
+            <h1 className="font-lalezar text-5xl md:text-7xl lg:text-[90px] leading-tight drop-shadow-lg">
+              <span className="block text-white">DJ DynaMeetsS</span>
+              <span className="block gradient-text">MUSIC</span>
             </h1>
             <p className="mt-6 font-poppins text-lg md:text-xl leading-relaxed text-[#d1d1d1]">
               Experience exclusive remixes, bootlegs, and club edits. Immerse yourself in music reimagined with fresh energy and creativity.

@@ -10,7 +10,7 @@ export default function About() {
     <section id="about" className="w-full relative bg-[#0c0c0c]">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section with Split Layout */}
-        <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 pb-16 pt-8 lg:pb-20 lg:pt-12">
+        <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 pb-16 pt-4 lg:pb-20 lg:pt-8">
           {/* Left Content */}
           <div className="order-1 lg:order-1 flex flex-col justify-center">
             <h1 className="font-lalezar text-6xl md:text-7xl lg:text-8xl xl:text-[100px] leading-tight mb-8">

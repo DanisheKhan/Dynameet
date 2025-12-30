@@ -108,7 +108,7 @@ const MusicPlatforms = () => {
 export default function MusicPage() {
   return (
     <PageLayout>
-      <ContentSection className="pt-8 !pb-0">
+      <ContentSection className="pt-16 !pb-0">
         <PageHeader 
           title="Music"
           description="Immerse yourself in the sonic world of DJ DynaMeets. From original productions to curated playlists, experience the rhythm."

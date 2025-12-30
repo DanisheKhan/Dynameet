@@ -9,7 +9,7 @@ export default function ContactPage() {
 
   return (
     <PageLayout>
-      <ContentSection maxWidth="max-w-4xl" className="pt-8">
+      <ContentSection maxWidth="max-w-4xl" className="pt-16">
         <PageHeader
           title="Contact Us"
           description="Ready to book DJ DynaMeets for your event? Have questions about availability or services? Fill out the form below and we'll get back to you promptly."
